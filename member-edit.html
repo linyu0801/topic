@@ -16,39 +16,79 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+
     <style>
+      .fish-aside ul {
+        list-style: none;
+        padding-inline-start: 0px;
+        color: #250404;
+        padding-bottom: 15px;
+      }
+
+      .fish-aside li {
+        padding-left: 16px;
+        list-style: none;
+        color: #250404;
+        /* margin: 00px 0px 10px 0px; */
+      }
+      .fish-aside ul > li:first-child {
+        margin-top: 30px;
+      }
+      .fish-aside-active {
+        border-left: 6px solid #cdaa8a;
+        margin: 20px 0 20px 0;
+      }
+      .fish-aside {
+        margin-top: 200px;
+      }
+      .fish-aside h4 {
+        margin-bottom: 24px;
+        color: #250404;
+      }
+      .fish-aside h4,
+      .fish-aside ul,
+      .fish-aside li,
+      .navbar li,
+      .pub-form label,
+      input,
+      button,
+      small {
+        font-family: "Noto Sans TC", "Noto serif TC", "Times New Roman", Times,
+          serif;
+        font-weight: 300;
+      }
+      .fish-topic {
+        font-family: "Noto Sans TC", "Noto serif TC", "Times New Roman", Times,
+          serif;
+        color: #cdaa8a;
+        font-weight: 400;
+        margin-top: 120px;
+      }
       .pub-form small {
         color: #d67b76;
         font-size: 10px;
-        font-family: "Noto Sans TC", "Times New Roman", Times, serif;
-        font-weight: 300;
         display: block;
         text-align: right;
         height: 26px;
-        /* padding-bottom: 32px; */
         margin-top: 4px;
       }
       .pub-input {
         border: solid 1px #cdaa8a;
         height: 46px;
-        width: 455px;
         padding-left: 15px;
       }
       .pub-form label {
         font-size: 16px;
-        font-family: "Noto Sans TC", "Times New Roman", Times, serif;
         color: #cdaa8a;
-        font-weight: 300;
       }
+
       .pub-button {
         background: #000;
         color: white;
         text-align: center;
-        width: 200px;
+        width: 260px;
         height: 50px;
         font-size: 14px;
-        font-family: "Noto Sans TC", "Times New Roman", Times, serif;
-        font-weight: 300;
         display: block;
       }
       .pub-mb-100 {
@@ -60,21 +100,38 @@
         margin-right: 60px;
         font-size: 14px;
       }
-      /* .nav-l {
-        margin-right: 150px;
-      } */
+
       footer {
         width: 100%;
         height: 388px;
         background-color: #250404;
       }
-      .bg-img {
+      .bgdown-img {
         position: fixed;
-        left: -180px;
-        top: 200px;
+        left: -130px;
+        top: 400px;
         z-index: -1;
-        /* overflow: hidden; */
       }
+      .bgup-img {
+        position: fixed;
+        right: 0px;
+        top: 50px;
+        z-index: -1;
+      }
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        color: rgba(0, 0, 0, 0);
+        fill: #cdaa8a;
+        opacity: 1;
+        background-image: url("/icons/calendar.svg");
+        background-repeat: no-repeat;
+        background-position: 100% center;
+        background-size: 15px;
+        padding-right: 20px;
+        cursor: pointer;
+      }
+      /* .col-9 {
+        background: #000;
+      } */
     </style>
   </head>
   <body class="h-100">
@@ -130,15 +187,33 @@
         </ul>
       </div>
     </nav>
-    <div class="position-relative"></div>
-    <div class="container h-100 mt-5">
+
+    <div class="container h-100">
       <div class="row">
-        <div class="col">
-          <div class="d-flex justify-content-center">
-            <form action="" class="pub-form">
-              <label for="account">使用者名稱</label><br />
+        <aside class="fish-aside h-100 col-2">
+          <h4>會員中心</h4>
+          <ul>
+            個人資訊
+            <li class="fish-aside-active">編輯個人資訊</li>
+            <li>更改密碼</li>
+          </ul>
+          <ul>
+            收藏清單
+          </ul>
+          <ul>
+            訂單資訊
+          </ul>
+        </aside>
+
+        <div class="col-9">
+          <h1 class="fish-topic">
+            <i class="fas fa-user-edit"></i> 編輯個人資訊
+          </h1>
+          <div class="w-100 d-flex justify-content-center">
+            <form action="" class="pub-form col-7">
+              <label for="account ">使用者名稱</label><br />
               <input
-                class="pub-input"
+                class="w-100 pub-input"
                 type="text"
                 name="acoount"
                 id="account"
@@ -147,7 +222,7 @@
 
               <label for="password">電子郵件</label><br />
               <input
-                class="pub-input"
+                class="w-100 pub-input"
                 type="text"
                 name="password"
                 id="password"
@@ -156,32 +231,26 @@
 
               <label for="birthday">生日</label><br />
               <input
-                class="pub-input"
-                type="text"
+                class="w-100 pub-input"
+                type="date"
                 name="birthday"
                 id="birthday"
               /><br />
               <small></small>
 
               <label for="tel">手機</label><br />
-              <input class="pub-input" type="text" name="tel" id="tel" />
+              <input class="w-100 pub-input" type="text" name="tel" id="tel" />
               <small>請輸入正確的手機格式</small>
 
               <label for="address">地址</label><br />
               <input
-                class="pub-input"
+                class="w-100 pub-input"
                 type="text"
                 name="address"
                 id="address"
               />
               <small></small>
 
-              <img
-                src="bg.svg"
-                alt=""
-                style="width: 450px; height: 450px; transform: rotate(350deg)"
-                class="bg-img"
-              />
               <button type="button" class="pub-button pub-mb-100 mx-auto">
                 儲存修改
               </button>
@@ -190,6 +259,18 @@
         </div>
       </div>
     </div>
+    <img
+      src="./icons/goldbg.svg"
+      alt=""
+      style="width: 450px; height: 450px; transform: rotate(350deg)"
+      class="bgdown-img"
+    />
+    <img
+      src="./icons/goldbg.svg"
+      alt=""
+      style="width: 276px; height: 276px; transform: rotate(230deg)"
+      class="bgup-img"
+    />
     <footer class="footer mt-auto py-3"></footer>
   </body>
   <script
