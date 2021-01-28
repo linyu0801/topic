@@ -17,16 +17,15 @@
       crossorigin="anonymous"
     />
     <style>
-      ul,
-      li,
       .pub-form label,
       input,
-      .pub-form button,
+      button,
       small {
         font-family: "Noto Sans TC", "Noto serif TC", "Times New Roman", Times,
           serif;
         font-weight: 300;
       }
+
       .pub-form small {
         color: #d67b76;
         font-size: 10px;
@@ -38,18 +37,18 @@
       .pub-input {
         border: solid 1px #cdaa8a;
         height: 46px;
-        width: 455px;
         padding-left: 15px;
       }
       .pub-form label {
         font-size: 16px;
         color: #cdaa8a;
       }
+
       .pub-button {
         background: #000;
         color: white;
         text-align: center;
-        width: 200px;
+        width: 260px;
         height: 50px;
         font-size: 14px;
         display: block;
@@ -60,14 +59,14 @@
     </style>
   </head>
   <body class="h-100">
-    <div class="container h-100 mt-5">
+    <div class="container h-100">
       <div class="row">
-        <div class="col">
-          <div class="d-flex justify-content-center">
-            <form action="" class="pub-form">
+        <div class="col-9">
+          <div class="w-100 d-flex justify-content-center">
+            <form action="" class="pub-form col-7">
               <label for="account ">使用者名稱</label><br />
               <input
-                class="pub-input"
+                class="w-100 pub-input"
                 type="text"
                 name="acoount"
                 id="account"
@@ -76,7 +75,7 @@
 
               <label for="password">電子郵件</label><br />
               <input
-                class="pub-input"
+                class="w-100 pub-input"
                 type="text"
                 name="password"
                 id="password"
@@ -85,20 +84,20 @@
 
               <label for="birthday">生日</label><br />
               <input
-                class="pub-input"
-                type="text"
+                class="w-100 pub-input"
+                type="date"
                 name="birthday"
                 id="birthday"
               /><br />
               <small></small>
 
               <label for="tel">手機</label><br />
-              <input class="pub-input" type="text" name="tel" id="tel" />
+              <input class="w-100 pub-input" type="text" name="tel" id="tel" />
               <small>請輸入正確的手機格式</small>
 
               <label for="address">地址</label><br />
               <input
-                class="pub-input"
+                class="w-100 pub-input"
                 type="text"
                 name="address"
                 id="address"
