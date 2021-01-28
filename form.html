@@ -17,15 +17,22 @@
       crossorigin="anonymous"
     />
     <style>
+      ul,
+      li,
+      .pub-form label,
+      input,
+      .pub-form button,
+      small {
+        font-family: "Noto Sans TC", "Noto serif TC", "Times New Roman", Times,
+          serif;
+        font-weight: 300;
+      }
       .pub-form small {
         color: #d67b76;
         font-size: 10px;
-        font-family: "Noto Sans TC", "Times New Roman", Times, serif;
-        font-weight: 300;
         display: block;
         text-align: right;
         height: 26px;
-        /* padding-bottom: 32px; */
         margin-top: 4px;
       }
       .pub-input {
@@ -36,9 +43,7 @@
       }
       .pub-form label {
         font-size: 16px;
-        font-family: "Noto Sans TC", "Times New Roman", Times, serif;
         color: #cdaa8a;
-        font-weight: 300;
       }
       .pub-button {
         background: #000;
@@ -47,8 +52,6 @@
         width: 200px;
         height: 50px;
         font-size: 14px;
-        font-family: "Noto Sans TC", "Times New Roman", Times, serif;
-        font-weight: 300;
         display: block;
       }
       .pub-mb-100 {
@@ -62,7 +65,7 @@
         <div class="col">
           <div class="d-flex justify-content-center">
             <form action="" class="pub-form">
-              <label for="account">使用者名稱</label><br />
+              <label for="account ">使用者名稱</label><br />
               <input
                 class="pub-input"
                 type="text"
@@ -101,6 +104,7 @@
                 id="address"
               />
               <small></small>
+
               <button type="button" class="pub-button pub-mb-100 mx-auto">
                 儲存修改
               </button>
