@@ -1,0 +1,22 @@
+.hoyu-mt {
+    margin: 30px 0;
+}
+
+.hoyu-page-link {
+    border: none;
+    font-family: 'Noto Serif TC';
+    color: #BEBEBE;
+    font-size: 24px;
+    padding: 0 8px;
+}
+
+.hoyu-page-link:hover {
+    color: #CDAA8A;
+
+}
+
+.hoyu-page-arrow {
+    font-size: 12px;
+    line-height: 30px;
+    padding: 0 14px;
+}
