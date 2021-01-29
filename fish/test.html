@@ -38,8 +38,11 @@
         border-left: 6px solid #cdaa8a;
         margin: 20px 0 20px 0;
       }
-      .fish-aside {
+      /* .fish-aside {
         margin-top: 200px;
+      } */
+      .fish-aside-t {
+        height: 200px;
       }
       .fish-aside h4 {
         margin-bottom: 24px;
@@ -63,7 +66,7 @@
         color: #cdaa8a;
         font-weight: 400;
         margin-top: 120px;
-        margin-bottom: 30px;
+        /* margin-bottom: 30px; */
       }
       .fish-topic i {
         margin-right: 5px;
@@ -191,6 +194,14 @@
 
     <div class="container h-100">
       <div class="row">
+        <div class="col-2 fish-aside-t"></div>
+        <div class="col-9">
+          <h1 class="fish-topic">
+            <i class="fas fa-user-edit"> </i> 編輯個人資訊
+          </h1>
+        </div>
+      </div>
+      <div class="row">
         <aside class="fish-aside h-100 col-2">
           <h4>會員中心</h4>
           <ul>
@@ -207,9 +218,6 @@
         </aside>
 
         <div class="col-9">
-          <h1 class="fish-topic">
-            <i class="fas fa-user-edit"></i> 編輯個人資訊
-          </h1>
           <div class="w-100 d-flex justify-content-center">
             <form action="" class="pub-form col-7">
               <label for="account ">使用者名稱</label><br />
