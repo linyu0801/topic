@@ -1,0 +1,126 @@
+h5 {
+  font-family: "Noto Serif TC";
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin-bottom: 0px;
+}
+
+.btnText {
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  font-weight: lighter;
+  letter-spacing: 3px;
+}
+
+.breadcrumb {
+  background: none;
+  margin: 50px 0px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #636c72;
+  content: "＞";
+}
+
+li.breadcrumb-item {
+  padding: 0px !important;
+}
+
+li.breadcrumb-item a {
+  text-decoration: none;
+  color: #cdaa8a;
+  font-family: "Noto Sans TC";
+  letter-spacing: 3px;
+}
+li.breadcrumb-item span {
+  font-family: "Noto Sans TC";
+  letter-spacing: 3px;
+}
+
+.categoryGroup {
+  background-color: #ffeed3;
+  padding: 20px 0px;
+}
+.categoryTitle {
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 0px 30px;
+}
+
+.categoryBtn {
+  padding: 10px 30px;
+  background-color: #ffeed3;
+  border: 0px;
+  text-align: left;
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.categoryBtn:hover {
+  background-color: #cdaa8a;
+}
+
+.categoryBtn.active {
+  background-color: #cdaa8a;
+}
+
+.sortBar {
+  background-color: #ffeed3;
+  padding: 20px 30px;
+}
+
+.sortBar h5 {
+  display: inline;
+  font-weight: bold;
+}
+
+.sortBar ol {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.sortBar ol li {
+  display: inline;
+}
+
+.sortBar ol li a {
+  text-decoration: none;
+  color: #250404;
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  font-weight: lighter;
+  letter-spacing: 3px;
+}
+
+.sortBar ol li a:hover {
+  text-decoration: none;
+  color: #cdaa8a;
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  font-weight: lighter;
+  letter-spacing: 3px;
+}
+
+.sortBar ol li.active a {
+  text-decoration: none;
+  color: #250404;
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.sortItem + .sortItem::before {
+  display: inline-block;
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+  color: #636c72;
+  content: "|";
+}
