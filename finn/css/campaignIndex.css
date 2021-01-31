@@ -7,7 +7,6 @@ h2 {
   color: #cdaa8a;
   font-family: "Noto Serif TC";
   font-weight: bold;
-  letter-spacing: 10px;
 }
 
 h3 {
@@ -42,8 +41,6 @@ button:focus {
 .searchTitle {
   font-family: "Noto Serif TC";
   text-align: center;
-  top: 35%;
-  left: calc(50% - 400px);
 }
 
 .searchTitle p {
@@ -61,14 +58,15 @@ button:focus {
   padding: 20px 30px;
   letter-spacing: 1px;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 #campaignSearch:focus {
   outline: none;
-  border: 2px solid #cdaa8a;
   color: #250404;
-  box-shadow: inset 0 0 5px #bebebe;
-  transition-duration: 0.5s;
+  box-shadow: inset 0 0 10px darkgray
+
+  
 }
 
 .searchBtn {
@@ -78,13 +76,14 @@ button:focus {
   letter-spacing: 3px;
   background-color: #cdaa8a;
   border: 0 none;
-  padding: 20px 50px;
+  padding: 20px auto;
   cursor: pointer;
   color: white;
 }
-.searchBtn:focus {
+.searchBtn:hover {
   outline: none;
-  box-shadow: inset 0 0 100px #bebebe;
+  color: white;
+  background-color: #250404;
   transition-duration: 0.3s;
 }
 
