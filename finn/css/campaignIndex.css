@@ -219,10 +219,6 @@ body {
   margin: 0 auto -400px; /* the bottom margin is the negative value of the footer's height */
 }
 
-.push {
-  height: 400px;
-}
-
 .footer {
   background-color: #250404;
   height: 400px;
