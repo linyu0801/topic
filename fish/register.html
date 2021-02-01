@@ -33,11 +33,8 @@
         color: #cdaa8a;
         font-weight: 400;
         margin-top: 10px;
-        /* margin-bottom: 30px; */
       }
-      .fish-topic i {
-        margin-right: 5px;
-      }
+
       .pub-form small {
         color: #d67b76;
         font-size: 10px;
@@ -47,9 +44,10 @@
         margin-top: 4px;
       }
       .pub-input {
-        border: solid 1px #cdaa8a;
+        border: none;
         height: 46px;
         padding-left: 15px;
+        background: rgba(255, 255, 255, 0.5);
       }
       .pub-form label {
         font-size: 16px;
@@ -57,6 +55,7 @@
       }
       .pub-form {
         margin-top: 150px;
+        width: 80%;
       }
       .pub-button {
         background: #000;
@@ -71,7 +70,13 @@
       .pub-mb-100 {
         margin-bottom: 100px;
       }
-
+      .pub-form p {
+        font-family: "Noto serif TC", "Noto Sans TC", "Times New Roman", Times,
+          serif;
+        font-size: 36px;
+        color: #cdaa8a;
+        text-align: center;
+      }
       .navbar-brand,
       .nav-item a {
         color: white;
@@ -98,6 +103,7 @@
         height: 680px;
         border: 5px solid #cdaa8a;
         z-index: 2;
+        pointer-events: none;
       }
     </style>
   </head>
@@ -157,68 +163,52 @@
     <div class="fish-bg">
       <div class="container h-100">
         <div class="row justify-content-center">
-          <div class="fish-mask col-4 position-absolute"></div>
+          <div class="fish-mask col-lg-5 col-md-4 position-absolute"></div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-6">
-            <div class="w-100 d-flex justify-content-center">
-              <form action="" class="pub-form col-10">
-                <label for="account ">使用者名稱</label><br />
-                <input
-                  class="w-100 pub-input"
-                  type="text"
-                  name="acoount"
-                  id="account"
-                /><br />
-                <small></small>
+          <div class="d-flex justify-content-center col-lg-6 col-md-4">
+            <form action="" class="pub-form">
+              <p>會員註冊</p>
+              <label for="account ">使用者名稱</label><br />
+              <input
+                class="w-100 pub-input"
+                type="text"
+                name="acoount"
+                id="account"
+              /><br />
+              <small></small>
 
-                <label for="password">電子郵件</label><br />
-                <input
-                  class="w-100 pub-input"
-                  type="text"
-                  name="password"
-                  id="password"
-                />
-                <small>請輸入正確的電子郵件格式</small>
+              <label for="password">電子郵件</label><br />
+              <input
+                class="w-100 pub-input"
+                type="text"
+                name="password"
+                id="password"
+              />
+              <small>請輸入正確的電子郵件格式</small>
 
-                <label for="birthday">生日</label><br />
-                <input
-                  class="w-100 pub-input"
-                  type="date"
-                  name="birthday"
-                  id="birthday"
-                /><br />
-                <small></small>
+              <label for="tel">手機</label><br />
+              <input class="w-100 pub-input" type="text" name="tel" id="tel" />
+              <small>請輸入正確的手機格式</small>
 
-                <label for="tel">手機</label><br />
-                <input
-                  class="w-100 pub-input"
-                  type="text"
-                  name="tel"
-                  id="tel"
-                />
-                <small>請輸入正確的手機格式</small>
+              <label for="address">地址</label><br />
+              <input
+                class="w-100 pub-input"
+                type="text"
+                name="address"
+                id="address"
+              />
+              <small></small>
 
-                <label for="address">地址</label><br />
-                <input
-                  class="w-100 pub-input"
-                  type="text"
-                  name="address"
-                  id="address"
-                />
-                <small></small>
-
-                <button type="button" class="pub-button pub-mb-100 mx-auto">
-                  儲存修改
-                </button>
-              </form>
-            </div>
+              <button type="button" class="pub-button pub-mb-100 mx-auto">
+                註冊
+              </button>
+            </form>
           </div>
         </div>
-        >
       </div>
     </div>
-    >
+
     <footer class="footer mt-auto py-3"></footer>
   </body>
   <script
