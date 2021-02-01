@@ -38,12 +38,18 @@
         border-left: 6px solid #cdaa8a;
         margin: 20px 0 20px 0;
       }
-      .fish-aside {
+      /* .fish-aside {
         margin-top: 200px;
+      } */
+      .fish-aside-t {
+        height: 100px;
       }
       .fish-aside h4 {
         margin-bottom: 24px;
         color: #250404;
+      }
+      .fish-aside ul a:hover {
+        text-decoration: none;
       }
       .fish-aside h4,
       .fish-aside ul,
@@ -62,8 +68,8 @@
           serif;
         color: #cdaa8a;
         font-weight: 400;
-        margin-top: 120px;
-        margin-bottom: 30px;
+        margin-top: 10px;
+        /* margin-bottom: 30px; */
       }
       .fish-topic i {
         margin-right: 5px;
@@ -133,6 +139,24 @@
         padding-right: 20px;
         cursor: pointer;
       }
+      .clbread {
+        font-size: 14px;
+        color: #cdaa8a;
+        font-family: "Noto Serif TC", serif;
+        letter-spacing: 1.8px;
+      }
+
+      .clbread:hover {
+        color: #250404;
+        text-decoration: none;
+      }
+
+      .clspan {
+        color: #250404;
+      }
+      .bread-div {
+        margin: 50px 0px;
+      }
     </style>
   </head>
   <body class="h-100">
@@ -191,12 +215,27 @@
 
     <div class="container h-100">
       <div class="row">
+        <div class="col-12 bread-div">
+          <a class="clbread" href="">首頁 <span class="clspan">></span></a>
+          <a class="clbread" href=""> 會員中心 <span class="clspan">></span></a>
+          <a class="clbread" href="">個人資訊 </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2 fish-aside-t"></div>
+        <div class="col-9">
+          <h1 class="fish-topic">
+            <i class="fas fa-user-edit"> </i> 編輯個人資訊
+          </h1>
+        </div>
+      </div>
+      <div class="row">
         <aside class="fish-aside h-100 col-2">
           <h4>會員中心</h4>
           <ul>
             個人資訊
-            <li class="fish-aside-active">編輯個人資訊</li>
-            <li>更改密碼</li>
+            <a href="#"><li class="fish-aside-active">編輯個人資訊</li></a>
+            <a href="#"><li>更改密碼</li></a>
           </ul>
           <ul>
             收藏清單
@@ -207,9 +246,6 @@
         </aside>
 
         <div class="col-9">
-          <h1 class="fish-topic">
-            <i class="fas fa-user-edit"></i> 編輯個人資訊
-          </h1>
           <div class="w-100 d-flex justify-content-center">
             <form action="" class="pub-form col-7">
               <label for="account ">使用者名稱</label><br />
