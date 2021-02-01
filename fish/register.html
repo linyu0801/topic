@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .navbar li,
+      .pub-form label,
+      input,
+      button,
+      small {
+        font-family: "Noto Sans TC", "Noto serif TC", "Times New Roman", Times,
+          serif;
+        font-weight: 300;
+      }
+      .fish-topic {
+        font-family: "Noto Sans TC", "Noto serif TC", "Times New Roman", Times,
+          serif;
+        color: #cdaa8a;
+        font-weight: 400;
+        margin-top: 10px;
+        /* margin-bottom: 30px; */
+      }
+      .fish-topic i {
+        margin-right: 5px;
+      }
+      .pub-form small {
+        color: #d67b76;
+        font-size: 10px;
+        display: block;
+        text-align: right;
+        height: 26px;
+        margin-top: 4px;
+      }
+      .pub-input {
+        border: solid 1px #cdaa8a;
+        height: 46px;
+        padding-left: 15px;
+      }
+      .pub-form label {
+        font-size: 16px;
+        color: #cdaa8a;
+      }
+      .pub-form {
+        margin-top: 150px;
+      }
+      .pub-button {
+        background: #000;
+        color: white;
+        text-align: center;
+        width: 260px;
+        height: 50px;
+        font-size: 14px;
+        display: block;
+        border: none;
+      }
+      .pub-mb-100 {
+        margin-bottom: 100px;
+      }
+
+      .navbar-brand,
+      .nav-item a {
+        color: white;
+        margin-right: 60px;
+        font-size: 14px;
+      }
+
+      footer {
+        width: 100%;
+        height: 388px;
+        background-color: #250404;
+      }
+      .fish-bg {
+        background: url("./imgs/register.jpg") no-repeat center center;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.2);
+        background-blend-mode: multiply;
+        z-index: 1;
+      }
+      .fish-mask {
+        margin-top: 100px;
+        background-color: rgba(255, 252, 248, 0.6);
+        opacity: 30%;
+        height: 680px;
+        border: 5px solid #cdaa8a;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body class="h-100">
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-between"
+        id="navbarNav"
+      >
+        <a class="navbar-brand" href="#">icon</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">商品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">體驗</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">場地租借</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">部落格</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">關於我們</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav nav-l">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-user-alt"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fas fa-shopping-cart"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="fish-bg">
+      <div class="container h-100">
+        <div class="row justify-content-center">
+          <div class="fish-mask col-4 position-absolute"></div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <div class="w-100 d-flex justify-content-center">
+              <form action="" class="pub-form col-10">
+                <label for="account ">使用者名稱</label><br />
+                <input
+                  class="w-100 pub-input"
+                  type="text"
+                  name="acoount"
+                  id="account"
+                /><br />
+                <small></small>
+
+                <label for="password">電子郵件</label><br />
+                <input
+                  class="w-100 pub-input"
+                  type="text"
+                  name="password"
+                  id="password"
+                />
+                <small>請輸入正確的電子郵件格式</small>
+
+                <label for="birthday">生日</label><br />
+                <input
+                  class="w-100 pub-input"
+                  type="date"
+                  name="birthday"
+                  id="birthday"
+                /><br />
+                <small></small>
+
+                <label for="tel">手機</label><br />
+                <input
+                  class="w-100 pub-input"
+                  type="text"
+                  name="tel"
+                  id="tel"
+                />
+                <small>請輸入正確的手機格式</small>
+
+                <label for="address">地址</label><br />
+                <input
+                  class="w-100 pub-input"
+                  type="text"
+                  name="address"
+                  id="address"
+                />
+                <small></small>
+
+                <button type="button" class="pub-button pub-mb-100 mx-auto">
+                  儲存修改
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        >
+      </div>
+    </div>
+    >
+    <footer class="footer mt-auto py-3"></footer>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"
+  ></script>
+  <script></script>
+</html>
