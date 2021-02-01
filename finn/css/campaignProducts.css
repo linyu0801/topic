@@ -83,16 +83,53 @@ li.breadcrumb-item span {
   padding: 20px 30px;
 }
 
-.categoryRange form p {
-  font-family: "Noto Sans TC";
-  font-size: 12px;
-  font-weight: lighter;
-  letter-spacing: 0.1rem;
-  margin-bottom: 8px;
+.categoryRange form h5 {
+  margin-bottom: 6px;
+
 }
 
-#priceRange {
-  width: 100%;
+#priceRangeMin {
+  width: 40%;
+  height: 46px;
+  border-radius: 0;
+  border: 1px solid #250404;
+  padding-left: 15px;
+  background: none;
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+}
+
+
+#priceRangeMin:focus{
+  outline: 0px;
+}
+
+#priceRangeMax{
+  width: 40%;
+  height: 46px;
+  border-radius: 0;
+  border: 1px solid #250404;
+  padding-left: 15px;
+  background: none;
+  font-family: "Noto Sans TC";
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+}
+#priceRangeMax:focus{
+  outline: 0px;
+}
+
+.before::after{
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #250404;
+  content: "～";
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 10px;
+
 }
 
 .sortBar {
@@ -148,7 +185,7 @@ li.breadcrumb-item span {
   display: inline-block;
   padding-right: 0.8rem;
   padding-left: 0.8rem;
-  color: #636c72;
+  color: #250404;
   content: "|";
 }
 
@@ -224,3 +261,4 @@ li.breadcrumb-item span {
   color: #cdaa8a;
   letter-spacing: 1px;
 }
+
