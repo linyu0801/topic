@@ -116,12 +116,12 @@
         height: 388px;
         background-color: #250404;
       }
-      .bgdown-img {
+      /* .bgdown-img {
         position: fixed;
         left: -130px;
         top: 500px;
         z-index: -1;
-      }
+      } */
       .bgup-img {
         position: fixed;
         right: 0px;
@@ -156,6 +156,19 @@
       }
       .bread-div {
         margin: 50px 0px;
+      }
+
+      .bgdown-img::before {
+        content: " ";
+        background-image: url(./icons/goldbg.svg);
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        position: absolute;
+        left: -130px;
+        top: 530px;
+        width: 450px;
+        height: 450px;
+        transform: rotate(350deg);
       }
     </style>
   </head>
@@ -247,7 +260,10 @@
 
         <div class="col-9">
           <div class="w-100 d-flex justify-content-center">
-            <form action="" class="pub-form col-7">
+            <form
+              action=""
+              class="pub-form col-xl-7 col-lg-8 col-md-10 col-sm-12"
+            >
               <label for="account ">使用者名稱</label><br />
               <input
                 class="w-100 pub-input"
@@ -296,7 +312,8 @@
         </div>
       </div>
     </div>
-    <img
+    <div class="bgdown-img"></div>
+    <!-- <img
       src="./icons/goldbg.svg"
       alt=""
       style="width: 450px; height: 450px; transform: rotate(350deg)"
@@ -307,7 +324,7 @@
       alt=""
       style="width: 276px; height: 276px; transform: rotate(230deg)"
       class="bgup-img"
-    />
+    /> -->
     <footer class="footer mt-auto py-3"></footer>
   </body>
   <script
