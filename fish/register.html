@@ -77,6 +77,10 @@
         color: #cdaa8a;
         text-align: center;
       }
+      .form-border {
+        border-bottom: #cdaa8a 2px solid;
+        margin: 10px 0px 30px 0px;
+      }
       .navbar-brand,
       .nav-item a {
         color: white;
@@ -100,7 +104,7 @@
         margin-top: 100px;
         background-color: rgba(255, 252, 248, 0.6);
         opacity: 30%;
-        height: 680px;
+        height: 750px;
         border: 5px solid #cdaa8a;
         z-index: 2;
         pointer-events: none;
@@ -169,37 +173,42 @@
           <div class="d-flex justify-content-center col-lg-6 col-md-4">
             <form action="" class="pub-form">
               <p>會員註冊</p>
-              <label for="account ">使用者名稱</label><br />
+              <label for="account ">請輸入帳號</label><br />
               <input
                 class="w-100 pub-input"
                 type="text"
                 name="acoount"
                 id="account"
               /><br />
-              <small></small>
+              <small>帳號重複</small>
 
-              <label for="password">電子郵件</label><br />
+              <label for="password">請輸入密碼</label><br />
               <input
                 class="w-100 pub-input"
                 type="text"
                 name="password"
                 id="password"
               />
-              <small>請輸入正確的電子郵件格式</small>
+              <small></small>
 
-              <label for="tel">手機</label><br />
-              <input class="w-100 pub-input" type="text" name="tel" id="tel" />
-              <small>請輸入正確的手機格式</small>
-
-              <label for="address">地址</label><br />
+              <label for="username">請輸入使用者名稱</label><br />
               <input
                 class="w-100 pub-input"
                 type="text"
-                name="address"
-                id="address"
+                name="username"
+                id="username"
               />
               <small></small>
 
+              <label for="email">請輸入電子郵件</label><br />
+              <input
+                class="w-100 pub-input"
+                type="text"
+                name="email"
+                id="email"
+              />
+              <small>請輸入正確電子郵件格式</small>
+              <div class="form-border w-100"></div>
               <button type="button" class="pub-button pub-mb-100 mx-auto">
                 註冊
               </button>
