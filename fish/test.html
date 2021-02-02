@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .fish-icons p,
+      .pub-form a,
+      .navbar li,
+      .pub-form label,
+      input,
+      button,
+      small {
+        font-family: "Noto Sans TC", "Noto serif TC", "Times New Roman", Times,
+          serif;
+        font-weight: 300;
+      }
+      .fish-icons p,
+      .pub-form a,
+      .pub-form button,
+      .pub-form label {
+        letter-spacing: 3.2px;
+      }
+      .pub-form small {
+        color: #d67b76;
+        font-size: 10px;
+        display: block;
+        text-align: right;
+        height: 26px;
+        margin-top: 4px;
+      }
+      .pub-input {
+        border: none;
+        height: 46px;
+        padding-left: 15px;
+        background: rgba(255, 255, 255, 0.5);
+      }
+      .pub-form label {
+        font-size: 16px;
+        color: #cdaa8a;
+      }
+      .pub-form {
+        margin-top: 50px;
+        width: 80%;
+      }
+      .pub-form a {
+        color: #cdaa8a;
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+
+      .pub-form a:hover {
+        text-decoration: none;
+      }
+      .pub-button {
+        background: #000;
+        color: white;
+        text-align: center;
+        width: 260px;
+        height: 50px;
+        font-size: 14px;
+        display: block;
+        border: none;
+      }
+      /* .mb-100 {
+        margin-top: 136px;
+      } */
+      .pub-form p {
+        font-family: "Noto serif TC", "Noto Sans TC", "Times New Roman", Times,
+          serif;
+        font-size: 36px;
+        color: #cdaa8a;
+        text-align: center;
+      }
+      .form-border {
+        border-bottom: #cdaa8a 1px solid;
+        margin: 12px 0px 36px 0px;
+      }
+      .navbar-brand,
+      .nav-item a {
+        color: white;
+        margin-right: 60px;
+        font-size: 14px;
+      }
+
+      footer {
+        width: 100%;
+        height: 388px;
+        background-color: #250404;
+      }
+      .fish-bg {
+        background: url("./imgs/login.jpg") no-repeat center center;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.2);
+        background-blend-mode: multiply;
+        z-index: 1;
+      }
+      .fish-mask {
+        margin-top: 100px;
+        background-color: rgba(255, 252, 248, 0.2);
+        border: 5px solid rgba(205, 170, 138, 0.3);
+
+        /* opacity: 30%; */
+        height: 630px;
+        z-index: 2;
+        /* pointer-events: none; */
+      }
+
+      .fish-mask .pub-form {
+        opacity: 300%;
+      }
+      .fish-maskborder {
+      }
+      .fish-icons p {
+        font-size: 14px;
+        color: #cdaa8a;
+        text-align: center;
+        margin-top: 18px;
+      }
+      .google {
+        background: url("./icons/google.svg") no-repeat;
+        width: 45px;
+        height: 40px;
+      }
+      .facebook {
+        background: url("./icons/facebook.svg") no-repeat;
+        width: 45px;
+        height: 40px;
+      }
+      .lock {
+        background: url("./icons/lock.svg") no-repeat;
+        width: 45px;
+        height: 40px;
+      }
+      @media screen and (max-width: 1200px) {
+        .fish-mask {
+          display: none;
+        }
+      }
+      .navbar-brand,
+      .nav-item a {
+        color: white;
+        margin-right: 60px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body class="h-100">
+    <div class="fish-bg">
+      <!-- <nav class="navbar navbar-expand-lg bg-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarNav"
+        >
+          <a class="navbar-brand" href="#">icon</a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">商品</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">體驗</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">場地租借</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">部落格</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">關於我們</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav nav-l">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-user-alt"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+      <div class="container h-100">
+        <div class="row justify-content-center">
+          <div
+            class="fish-mask d-flex justify-content-center col-xl-6 col-lg-8 col-md-10 col-sm-12"
+          >
+            <form action="" class="pub-form">
+              <p>會員登入</p>
+              <label for="account ">請輸入帳號</label><br />
+              <input
+                class="w-100 pub-input"
+                type="text"
+                name="acoount"
+                id="account"
+              /><br />
+              <small>帳號錯誤或不存在</small>
+
+              <label for="password">請輸入密碼</label><br />
+              <input
+                class="w-100 pub-input"
+                type="text"
+                name="password"
+                id="password"
+              />
+              <small>1234</small>
+              <button type="button" class="pub-button mx-auto">登入</button>
+              <a href="#">註冊新帳號</a>
+              <div class="form-border w-100"></div>
+              <div class="fish-icons d-flex justify-content-between">
+                <div class="googlelogin col-4">
+                  <div class="google mx-auto"></div>
+                  <p>Google登入</p>
+                </div>
+                <div class="facebooklogin col-4">
+                  <div class="facebook mx-auto"></div>
+                  <p>Facebook登入</p>
+                </div>
+                <div class="forgetpassword col-4">
+                  <div class="lock mx-auto"></div>
+                  <p>忘記密碼</p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer mt-auto py-3"></footer>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"
+  ></script>
+  <script></script>
+</html>
