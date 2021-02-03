@@ -119,6 +119,9 @@
         border: 5px solid #cdaa8a;
         pointer-events: none;
       }
+      .fish-icons a{
+margin:0 auto;
+}
       .fish-icons p {
         font-size: 14px;
         color: #cdaa8a;
@@ -216,43 +219,49 @@
           <div
             class="d-flex justify-content-center col-xl-6 col-lg-8 col-md-10 col-sm-12"
           >
-            <form action="" class="pub-form">
-              <p>會員登入</p>
-              <label for="account ">請輸入帳號</label><br />
-              <input
-                class="w-100 pub-input"
-                type="text"
-                name="acoount"
-                id="account"
-              /><br />
-              <small>帳號錯誤或不存在</small>
+          <form action="" class="pub-form">
+            <p>會員登入</p>
+            <label for="account ">請輸入帳號</label><br />
+            <input
+              class="w-100 pub-input"
+              type="text"
+              name="acoount"
+              id="account"
+            /><br />
+            <small>帳號錯誤或不存在</small>
 
-              <label for="password">請輸入密碼</label><br />
-              <input
-                class="w-100 pub-input"
-                type="text"
-                name="password"
-                id="password"
-              />
-              <small>1234</small>
-              <button type="button" class="pub-button mx-auto">登入</button>
-              <a href="#">註冊新帳號</a>
-              <div class="form-border w-100"></div>
-              <div class="fish-icons d-flex justify-content-between">
-                <div class="googlelogin col-4">
-                  <div class="google mx-auto"></div>
-                  <p>Google登入</p>
-                </div>
-                <div class="facebooklogin col-4">
-                  <div class="facebook mx-auto"></div>
-                  <p>Facebook登入</p>
-                </div>
-                <div class="forgetpassword col-4">
-                  <div class="lock mx-auto"></div>
-                  <p>忘記密碼</p>
-                </div>
+            <label for="password">請輸入密碼</label><br />
+            <input
+              class="w-100 pub-input"
+              type="text"
+              name="password"
+              id="password"
+            />
+            <small>1234</small>
+            <button type="button" class="pub-button mx-auto">登入</button>
+            <a href="#">註冊新帳號</a>
+            <div class="form-border w-100"></div>
+            <div class="fish-icons d-flex justify-content-between">
+              <a href="#" class="col-4">
+              <div class="googlelogin  ">
+                <div class="google mx-auto"></div>
+                <p>Google登入</p>
               </div>
-            </form>
+              </a >
+              <a href="#" class="col-4">
+              <div class="facebooklogin ">
+                <div class="facebook mx-auto"></div>
+                <p>Facebook登入</p>
+              </div>
+            </a>
+            <a href="#" class="col-4">
+              <div class="forgetpassword ">
+                <div class="lock mx-auto"></div>
+                <p>忘記密碼</p>
+              </div>
+            </div>
+          </a>
+          </form>
           </div>
         </div>
       </div>
