@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <style>
+    .clsection {
+      height: 800px;
+      width: 100%;
+      background-image: url(./1/1-2.jpg);
+      background-size: cover;
+      border-radius: 0;
+      opacity: 0.8;
+    }
+
+    .clslogan {
+
+      position: relative;
+    }
+
+    .clheromsg {
+      position: absolute;
+
+      font-size: 48px;
+      margin-top: 150px;
+      background: linear-gradient(to right, #250404, #c7ab8e);
+      opacity: 0.8;
+    }
+
+    .cl-searchbtn {
+      border-radius: 0;
+      color: white;
+      background-color: hsl(29, 40%, 67%);
+      border-color: #cdaa8a;
+      font-family: "Noto Serif TC", serif;
+      font-size: 12px;
+      width: 20%;
+      height: 60px;
+      margin-top: 250px;
+
+
+
+    }
+
+    .clsearchbar {
+      border-style: none;
+      color: #1a1e23;
+      font-size: 14px;
+      font-family: "Noto Serif TC", serif;
+      height: 60px;
+      border-radius: 0;
+      margin-top: 250px;
+      width: 40%;
+      padding-left: 15px;
+
+    }
+
+    .clbread {
+      font-size: 14px;
+      color: #cdaa8a;
+      font-family: "Noto Serif TC", serif;
+      letter-spacing: 1.8px;
+      text-decoration: none;
+      padding: 0px;
+
+
+    }
+
+
+    .clspan {
+      color: #250404;
+    }
+
+    .clbread:hover {
+      color: #250404;
+
+    }
+
+
+    .breadbox {
+
+      height: 100px;
+      margin-top: 51px;
+
+    }
+
+    h2 {
+      font-size: 48px;
+      color: #cdaa8a;
+      font-family: "Noto Serif TC";
+      font-weight: bold;
+    }
+
+    h3 {
+      font-size: 24px;
+      color: #250404;
+      font-family: "Noto Serif TC";
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+
+    h5 {
+      font-family: "Noto Serif TC";
+      font-size: 16px;
+      letter-spacing: 3px;
+      margin-bottom: 0px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    .price::before {
+      display: inline-block;
+      padding: 0px 0.1rem;
+      color: #250404;
+      font-size: 16px;
+      font-family: "Noto Serif TC";
+      font-weight: bold;
+      content: "$";
+    }
+
+    .stars {
+      font-size: 14px;
+      color: #cdaa8a;
+      letter-spacing: 1px;
+    }
+
+    .price {
+      font-size: 16px;
+      font-family: "Noto Serif TC";
+      color: #250404;
+      letter-spacing: 3px;
+      font-weight: bold;
+      border-left: 5px solid #cdaa8a;
+      padding-left: 12px;
+      text-align: right;
+    }
+
+
+    .campaignCardBig {
+      height: 380px;
+      /* width: 1189.54px; */
+      background-color: #ffeed3;
+      margin-bottom: 30px;
+      transition-duration: 0.5s;
+      cursor: pointer;
+    }
+
+    .campaignCardBig:hover {
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+      transition-duration: 0.5s;
+    }
+
+    .cardBigImg {
+      background-image: url("./1/1-2.jpg");
+      width: 40%;
+      background-size: cover;
+      overflow: hidden;
+    }
+
+    .cardBigText {
+      width: 60%;
+      padding: 30px;
+    }
+
+    .cardBigTag {
+      width: 70px;
+      height: 20px;
+      background-color: #d67b76;
+      margin-bottom: 10px;
+      font-family: "Noto Sans TC";
+      font-size: 10px;
+      text-align: center;
+      color: white;
+      font-weight: lighter;
+      letter-spacing: 0.075rem;
+    }
+
+    /* .cardBigTitle {
+      margin-bottom: 15px;
+    } */
+
+    .cardBigContent>p {
+      font-family: "Noto Serif TC";
+      color: #636c72;
+      font-size: 12px;
+      letter-spacing: 0.075rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+
+    .cardBigContent>.location {
+
+      margin-bottom: 8px;
+      font-family: "Noto Sans TC";
+      font-weight: lighter;
+      letter-spacing: 0.15rem;
+    }
+
+    /* .cardBigContent>.calendar {
+      margin-bottom: 8px;
+      font-family: "Noto Sans TC";
+      font-weight: lighter;
+      letter-spacing: 0.15rem;
+    } */
+
+    /* .cardBigContent>.stars {
+      font-size: 14px;
+      color: #cdaa8a;
+      letter-spacing: 1px;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="clsection jumbotron text-white col-lg-12  col-md-6 col-sm-4 container-fluid">
+    <div class=" clslogan jumbotron d-flex justify-content-center">
+      <h2 class="clheromsg">現在動手做</h2>
+
+
+    </div>
+
+    <div class="container justify-content-center">
+      <div class="row col-lg-8 col-sm-12 mx-auto">
+        <form class="d-flex justify-content-center">
+          <input class="clsearchbar" type="date" placeholder="日期:" />
+          <input class="clsearchbar" type="number" min="1" placeholder="人數:" />
+          <button class="cl-searchbtn btn search-btn-outline-success" type="submit">
+            <i class="fas fa-search"></i> <span> </span>搜尋
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="breadbox col-lg-12  col-sm-12 ">
+      <a class="clbread" href="">
+        首頁 <span class="clspan">></span> 教室租借
+        <span class="clspan">></span> 自己寫</a>
+    </div>
+  </div>
+
+  <div class="container ">
+    <div class="col-lg-12 col-md-6 col-sm-4">
+      <div class="campaignCardBig d-flex w-100">
+        <div class="cardBigImg "></div>
+        <div class="cardBigText ">
+
+          <div class="cardBigContent">
+            <p>
+              無經驗新手也能輕鬆做出甜點！Funsiamo 玩美烘焙體驗，透過 iPad
+              數位教學，搭配現場服務人員的親切協助，每個走進店裡的人都能帶走精美
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
