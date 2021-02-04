@@ -1,0 +1,19 @@
+* {
+  outline: 1px red solid;
+}
+
+.clbread {
+  font-size: 14px;
+  color: #cdaa8a;
+  font-family: "Noto Serif TC", serif;
+  letter-spacing: 1.8px;
+}
+
+.clbread:hover {
+  color: #250404;
+  text-decoration: none;
+}
+
+.clspan {
+  color: #250404;
+}

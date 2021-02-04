@@ -16,23 +16,7 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <style>
-      .clbread {
-        font-size: 14px;
-        color: #cdaa8a;
-        font-family: "Noto Serif TC", serif;
-        letter-spacing: 1.8px;
-      }
-
-      .clbread:hover {
-        color: #250404;
-        text-decoration: none;
-      }
-
-      .clspan {
-        color: #250404;
-      }
-    </style>
+    <link rel="stylesheet" href="./cart_p_step1.css" />
   </head>
 
   <body class="h-100">
@@ -94,12 +78,102 @@
         <div class="col-10"></div>
         <div class="col-1"></div>
       </div>
-      <div class="row">
+      <div class="row hhyy-bread">
         <div class="col-1"></div>
-        <div class="col-10"></div>
+        <div class="col-10">
+          <a class="clbread" href="#">首頁 <span class="clspan">></span></a>
+          <a class="clbread" href="#">購物清單</a>
+        </div>
         <div class="col-1"></div>
       </div>
+      <div class="row hhyy-cate">
+        <div class="col-1">
+            
+        </div>
+        <div class="col-10 text-center"><p>請按商品分類分別結帳</p>
+            <div class="cart-cate d-flex justify-content-around">
+                <div class="btn">甜點商城</div>
+                <div class="btn">活動體驗</div>
+                <div class="btn">場地預定</div>
+            </div></div>
+      </div>
+      <div class="row hhyy-step">
+        <div class="col-1"></div>
+        <div class="col-10 hy-cart-step d-flex justify-content-between">
+          <div>
+            <p>Step.1</p>
+            <p>購物清單</p>
+          </div>
+          <div class="d-flex flex-column justify-content-center">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class=""">
+            <p>Step.2</p>
+            <p>配送與付款資訊</p>
+          </div>
+          <div class="d-flex flex-column justify-content-center">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="">
+            <p>Step.3</p>
+            <p>感謝訂購</p>
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      <div class="row hhyy-list-title">
+        <div class="col-1"></div>
+        <div class="col-10"><h1>購物清單</h1></div>
+        <div class="col-1"></div>
+      </div>
+
+      <div class="row hhyy-list">
+        <div class="col-1"></div>
+        
+            
+                <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th class="col-3">商品名稱</th>
+                        <th>規格</th>
+                        <th>價格</th>
+                        <th>數量</th>
+                        <th>小計</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><div class="hy-imgwrap"><img src="./img/2 (2).jpeg" style="height: 64px;"alt=""></div></td>
+                        <td>巧克力重擊</td>
+                        <td>7吋</td>
+                        <td>400</td>
+                        <td>1</td>
+                        <td>400</td>
+                        <td><i class="far fa-times-circle"></i></td>
+                    </tr>
+                </tbody>
+                </table>
+            
+            
+        </div>
+        <div class="col-1"></div>
+      </div>
+
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form action="">
+                    <table>
+                        <thead></thead>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    
   </body>
   <script
     src="https://code.jquery.com/jquery-3.5.1.js"
