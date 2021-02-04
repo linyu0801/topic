@@ -353,10 +353,57 @@ body {
     margin-bottom: 60px;
 
   }
+
+  .campaignCard {
+    height: auto;
+  }
+
   .cardPhone{
     height: 500px;
     margin-bottom: 30px;
   }
+
+  .cardText {
+    padding: 15px;
+  }
+  
+  .price::before{
+    display: inline-block;
+    padding: 0px 0.1rem;
+    color: #250404;
+    font-size: 14px;
+    font-family: "Noto Serif TC";
+    font-weight: bold;
+    content: "$";
+  }
+  
+  .campaignSite {
+    font-size: 12px;
+    color: #707070;
+    font-family: "Noto Sans TC";
+    font-weight: lighter;
+    letter-spacing: 1px;
+  }
+  
+  .stars {
+    font-size: 14px;
+    color: #cdaa8a;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+  }
+  
+  .price {
+    font-size: 14px;
+    font-family: "Noto Serif TC";
+    color: #250404;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border-left: 3px solid #cdaa8a;
+    padding-left: 12px;
+    text-align: right;
+    margin-bottom: 0px;
+  }
+
   
   .tastingBgImg{
     background-image: url(../img/illustration/goldenTriangle.png);
