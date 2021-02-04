@@ -16,22 +16,32 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-
+    <link rel="stylesheet" href="./css/font.css" />
     <style>
       .fish-aside ul {
+        font-family: "Noto Sans TC";
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.1rem;
         list-style: none;
         padding-inline-start: 0px;
         color: #250404;
         padding-bottom: 15px;
+        margin-bottom: 0px;
       }
 
       .fish-aside li {
+        font-family: "Noto Sans TC";
+        font-size: 16px;
         padding-left: 16px;
         margin-top: 16px;
         list-style: none;
         color: #250404;
       }
-
+      .fish-aside a :hover {
+        color: #cdaa8a;
+      }
       .fish-aside ul > li:first-child {
         margin-top: 30px;
       }
@@ -42,7 +52,7 @@
       }
 
       .fish-aside h4 {
-        margin-bottom: 24px;
+        margin-bottom: 50px;
         color: #250404;
       }
 
@@ -50,24 +60,8 @@
         text-decoration: none;
       }
 
-      .fish-aside h4,
-      .fish-aside ul,
-      .fish-aside li,
-      .navbar li,
-      .pub-form label,
-      input,
-      button,
-      small {
-        font-family: "Noto Sans TC", "Noto serif TC", "Times New Roman", Times,
-          serif;
-        font-weight: 300;
-      }
-
       .fish-topic {
-        font-family: "Noto Sans TC", "Noto serif TC", "Times New Roman", Times,
-          serif;
         color: #cdaa8a;
-        font-weight: 400;
         margin-top: 10px;
         margin-bottom: 50px;
       }
@@ -171,33 +165,6 @@
         font-size: 12px;
         line-height: 30px;
         /* padding: 0 14px; */
-      }
-
-      h2 {
-        font-size: 48px;
-        color: #cdaa8a;
-        font-family: "Noto Serif TC";
-        font-weight: bold;
-      }
-
-      h3 {
-        font-size: 24px;
-        color: #250404;
-        font-family: "Noto Serif TC";
-        font-weight: bold;
-        letter-spacing: 3px;
-      }
-
-      h5 {
-        font-family: "Noto Serif TC";
-        font-size: 16px;
-        letter-spacing: 3px;
-        margin-bottom: 0px;
-        font-weight: bold;
-      }
-
-      p {
-        font-size: 12px;
       }
 
       .price::before {
@@ -400,9 +367,7 @@
       <div class="row justify-content-center">
         <div class="col-2"></div>
         <div class="col-9">
-          <h1 class="fish-topic">
-            <h1 class="fish-topic"><i class="fas fa-bookmark"></i> 活動收藏</h1>
-          </h1>
+          <h2 class="fish-topic"><i class="fas fa-bookmark"></i> 活動收藏</h2>
         </div>
       </div>
       <div class="row justify-content-center">

@@ -16,50 +16,36 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/font.css" />
 
     <style>
-      h2 {
-        font-size: 48px;
-        color: #cdaa8a;
-        font-family: "Noto Serif TC";
-        font-weight: bold;
-      }
-
-      h3 {
-        font-size: 24px;
-        color: #250404;
-        font-family: "Noto Serif TC";
-        font-weight: bold;
-        letter-spacing: 3px;
-      }
-
-      h5 {
-        font-family: "Noto Serif TC";
-        font-size: 16px;
-        letter-spacing: 3px;
-        margin-bottom: 0px;
-        font-weight: bold;
-      }
-
-      p {
-        font-size: 12px;
-        font-family: "Noto Serif TC";
-      }
-
+      /* html {
+        overflow: hidden;
+      } */
       .fish-aside ul {
+        font-family: "Noto Sans TC";
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.1rem;
         list-style: none;
         padding-inline-start: 0px;
         color: #250404;
         padding-bottom: 15px;
+        margin-bottom: 0px;
       }
 
       .fish-aside li {
+        font-family: "Noto Sans TC";
+        font-size: 16px;
         padding-left: 16px;
         margin-top: 16px;
         list-style: none;
         color: #250404;
       }
-
+      .fish-aside a :hover {
+        color: #cdaa8a;
+      }
       .fish-aside ul > li:first-child {
         margin-top: 30px;
       }
@@ -70,7 +56,7 @@
       }
 
       .fish-aside h4 {
-        margin-bottom: 24px;
+        margin-bottom: 50px;
         color: #250404;
       }
 
@@ -89,16 +75,8 @@
         margin-right: 5px;
       }
 
-      .pub-form label,
-      input,
-      button,
-      small {
-        font-family: "Noto Sans TC", "Noto serif TC", "Times New Roman", Times,
-          serif;
-        font-weight: 300;
-      }
-
       .pub-form small {
+        font-family: "Noto Serif TC";
         color: #d67b76;
         font-size: 12px;
         display: block;
@@ -107,16 +85,25 @@
         margin-top: 6px;
       }
       .pub-input {
+        font-family: "Noto Serif TC";
+        letter-spacing: 0.1rem;
+        line-height: 20px;
         border: solid 1px #cdaa8a;
         height: 46px;
         padding-left: 15px;
       }
       .pub-form label {
+        font-family: "Noto Serif TC";
+        letter-spacing: 0.1rem;
+        line-height: 20px;
         font-size: 16px;
         color: #cdaa8a;
       }
 
       .pub-button {
+        font-family: "Noto Sans TC";
+        letter-spacing: 0.1rem;
+        line-height: 20px;
         background: #000;
         color: white;
         text-align: center;
@@ -185,6 +172,7 @@
         width: 276px;
         height: 276px;
         transform: rotate(230deg);
+        overflow: hidden;
       }
 
       .bgdown-img::before {
@@ -198,6 +186,8 @@
         width: 450px;
         height: 450px;
         transform: rotate(350deg);
+        z-index: -1;
+        overflow: hidden;
       }
 
       @media screen and (max-width: 992px) {
@@ -277,13 +267,14 @@
         <div class="col-12 bread-div">
           <a class="clbread" href="">首頁 <span class="clspan">></span></a>
           <a class="clbread" href=""> 會員中心 <span class="clspan">></span></a>
-          <a class="clbread" href="">個人資訊 </a>
+          <a class="clbread" href=""> 個人資訊 <span class="clspan">></span></a>
+          <a class="clbread" href="">更改密碼 </a>
         </div>
       </div>
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-2"></div>
         <div class="col-9">
-          <h1 class="fish-topic"><i class="fas fa-user-edit"> </i> 更改密碼</h1>
+          <h2 class="fish-topic"><i class="fas fa-user-edit"> </i> 更改密碼</h2>
         </div>
       </div>
       <div class="row justify-content-center">
