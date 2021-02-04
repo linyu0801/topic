@@ -1,0 +1,29 @@
+@media screen and (max-width: 575.98px) { 
+    h2 {
+        font-size: 30px;
+        color: #cdaa8a;
+        font-family: "Noto Serif TC";
+        font-weight: bold;
+        letter-spacing: 0.1em;
+      }
+    
+      h3{
+        font-size: 16px;
+        font-family: "Noto Serif TC";
+        letter-spacing: 0.05em;
+      }
+    
+      p {
+        font-size: 12px;
+        font-family: "Noto Serif TC";
+        letter-spacing: 0.1em;
+        
+        
+      }
+    
+      a{
+        font-size: 12px;
+        font-family: "Noto Sans TC";
+        letter-spacing: 0.1em;
+      }
+}
