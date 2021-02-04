@@ -16,7 +16,8 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./cart_p_step1.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/cart_p_step1.css" />
   </head>
 
   <body class="h-100">
@@ -87,93 +88,137 @@
         <div class="col-1"></div>
       </div>
       <div class="row hhyy-cate">
-        <div class="col-1">
-            
+        <div class="col-1"></div>
+        <div class="col-10 text-center">
+          <h4>請按商品分類分別結帳</h4>
+          <div class="cart-cate d-flex justify-content-around">
+            <div class="btn"><h4>甜點商城</h4></div>
+            <div class="btn"><h4>活動體驗</h4></div>
+            <div class="btn"><h4>場地預定</h4></div>
+          </div>
         </div>
-        <div class="col-10 text-center"><p>請按商品分類分別結帳</p>
-            <div class="cart-cate d-flex justify-content-around">
-                <div class="btn">甜點商城</div>
-                <div class="btn">活動體驗</div>
-                <div class="btn">場地預定</div>
-            </div></div>
       </div>
-      <div class="row hhyy-step">
+      <div class="row hhyy-step mt-5">
         <div class="col-1"></div>
         <div class="col-10 hy-cart-step d-flex justify-content-between">
-          <div>
-            <p>Step.1</p>
-            <p>購物清單</p>
-          </div>
-          <div class="d-flex flex-column justify-content-center">
-            <i class="fas fa-chevron-right"></i>
-          </div>
-          <div class=""">
-            <p>Step.2</p>
-            <p>配送與付款資訊</p>
+          <div class="hy-step-active">
+            <h4>Step.1</h4>
+            <h4>購物清單</h4>
           </div>
           <div class="d-flex flex-column justify-content-center">
             <i class="fas fa-chevron-right"></i>
           </div>
           <div class="">
-            <p>Step.3</p>
-            <p>感謝訂購</p>
+            <h4>Step.2</h4>
+            <h4>配送與付款資訊</h4>
+          </div>
+          <div class="d-flex flex-column justify-content-center">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+          <div class="">
+            <h4>Step.3</h4>
+            <h4>感謝訂購</h4>
           </div>
         </div>
         <div class="col-1"></div>
       </div>
       <div class="row hhyy-list-title">
         <div class="col-1"></div>
-        <div class="col-10"><h1>購物清單</h1></div>
+        <div class="col-10 mt-5"><h2>購物清單</h2></div>
         <div class="col-1"></div>
       </div>
-
-      <div class="row hhyy-list">
+      <!-- <form>
+        <div class="form-row hy-form-row">
+          <div class="col-1 hy-form-col"></div>
+          <div class="col-10 hy-form-col">
+            <table>
+              <thead>
+                <tr>
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="col-1 hy-form-col"></div>
+        </div>
+      </form> -->
+      <div class="row">
         <div class="col-1"></div>
-        
-            
-                <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th class="col-3">商品名稱</th>
-                        <th>規格</th>
-                        <th>價格</th>
-                        <th>數量</th>
-                        <th>小計</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><div class="hy-imgwrap"><img src="./img/2 (2).jpeg" style="height: 64px;"alt=""></div></td>
-                        <td>巧克力重擊</td>
-                        <td>7吋</td>
-                        <td>400</td>
-                        <td>1</td>
-                        <td>400</td>
-                        <td><i class="far fa-times-circle"></i></td>
-                    </tr>
-                </tbody>
-                </table>
-            
-            
+        <div class="col-10">
+          <form class="w-100 text-center hy-form" action="">
+            <table class="w-100">
+              <thead class="w-100">
+                <tr class="w-100">
+                  <th class="hy-form-img"></th>
+                  <th>商品</th>
+                  <th>規格</th>
+                  <th>價格</th>
+                  <th>數量</th>
+                  <th>小計</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-4">
+                    <div class="hy-img d-flex justify-content-end">
+                      <img src="./img/2 (2).jpeg" alt="" />
+                    </div>
+                  </td>
+                  <td>巧克力重擊</td>
+                  <td>7吋</td>
+                  <td>400</td>
+                  <td>
+                    <select name="" id="">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </td>
+                  <td>400</td>
+                  <td><i class="far fa-times-circle"></i></td>
+                </tr>
+                <tr>
+                  <td class="py-4">
+                    <div class="hy-img d-flex justify-content-end">
+                      <img src="./img/2 (2).jpeg" alt="" />
+                    </div>
+                  </td>
+                  <td>巧克力重擊</td>
+                  <td>7吋</td>
+                  <td>400</td>
+                  <td>
+                    <select name="" id="">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </td>
+                  <td>400</td>
+                  <td><i class="far fa-times-circle"></i></td>
+                </tr>
+                <tr>
+                  <td colspan="7" class="hy-form-border"></td>
+                </tr>
+                <tr>
+                  <td class="py-4"></td>
+                  <td></td>
+                  <td></td>
+                  <td colspan="2" class="hy-py-48">購物清單小計</td>
+                  <td>800</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <input type="hidden" name="subtotal" value="800" />
+          </form>
         </div>
         <div class="col-1"></div>
       </div>
-
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <form action="">
-                    <table>
-                        <thead></thead>
-                    </table>
-                </form>
-            </div>
-        </div>
-    </div>
-    
   </body>
   <script
     src="https://code.jquery.com/jquery-3.5.1.js"
