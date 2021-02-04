@@ -18,6 +18,37 @@
     />
 
     <style>
+      h2 {
+        font-size: 48px;
+        color: #cdaa8a;
+        font-family: "Noto Serif TC";
+        font-weight: bold;
+      }
+
+      h3 {
+        font-size: 24px;
+        color: #250404;
+        font-family: "Noto Serif TC";
+        font-weight: bold;
+        letter-spacing: 3px;
+      }
+
+      h5 {
+        font-family: "Noto Serif TC";
+        font-size: 16px;
+        letter-spacing: 3px;
+        margin-bottom: 0px;
+        font-weight: bold;
+      }
+      h6 {
+        font-size: 14px;
+        font-family: "Noto Serif TC";
+        letter-spacing: 3px;
+      }
+      p {
+        font-size: 12px;
+      }
+
       .fish-icons p,
       .pub-form a,
       .navbar li,
@@ -25,7 +56,7 @@
       input,
       button,
       small {
-        font-family: "Noto serif TC", "Noto Sans TC", "Times New Roman", Times,
+        font-family: "Noto Sans TC", "Noto serif TC", "Times New Roman", Times,
           serif;
         font-weight: 300;
       }
@@ -49,6 +80,10 @@
         padding-left: 15px;
         background: rgba(255, 255, 255, 0.5);
       }
+      .pub-form h6 {
+        color: white;
+        text-align: center;
+      }
       .pub-form label {
         font-size: 16px;
         color: #cdaa8a;
@@ -57,7 +92,6 @@
         margin-top: 50px;
         margin-bottom: 50px;
         width: 80%;
-        /* height: 100%; */
       }
       .pub-form a {
         color: #cdaa8a;
@@ -81,7 +115,6 @@
         display: block;
         border: none;
         margin-top: 24px;
-
       }
       /* .mb-100 {
         margin-top: 136px;
@@ -92,21 +125,21 @@
         font-size: 36px;
         color: #cdaa8a;
         text-align: center;
-        margin-bottom: 40px;
       }
       .form-border {
         border-bottom: #cdaa8a 1px solid;
         margin: 12px 0px 36px 0px;
       }
-
+      .forget-text {
+        margin: 32px auto;
+      }
       footer {
         width: 100%;
         height: 388px;
         background-color: #250404;
       }
       .fish-bg {
-        background: url("./imgs/login.jpg") no-repeat  ;
-        background-position:center  -170px ;
+        background: url("./imgs/forget.jpg") no-repeat center center;
         background-size: cover;
         background-color: rgba(0, 0, 0, 0.2);
         background-blend-mode: multiply;
@@ -117,46 +150,20 @@
         background-color: rgba(255, 252, 248, 0.18);
         border: 5px solid rgba(205, 170, 138, 0.3);
         background-clip: padding-box;
+        /* height: 630px; */
         margin-bottom: 100px;
       }
-      .fish-icons a {
-        margin: 0 auto;
-        padding: 0 0;
-      }
-      .fish-icons p {
-        font-size: 14px;
-        color: #cdaa8a;
-        text-align: center;
-        margin-top: 18px;
-        margin-bottom: 0px;
-        white-space: nowrap;
-      }
-      .google {
-        background: url("./icons/google.svg") no-repeat center center;
-        width: 45px;
-        height: 40px;
-      }
-      .facebook {
-        background: url("./icons/facebook.svg") no-repeat center center;
-        width: 45px;
-        height: 40px;
-      }
-      .lock {
-        background: url("./icons/lock.svg") no-repeat center center;
-        width: 45px;
-        height: 40px;
-      }
+
       @media screen and (max-width: 1200px) {
         .fish-mask {
-          background-color: transparent;
-        border: none;
+          display: none;
         }
       }
     </style>
   </head>
   <body class="h-100">
     <div class="fish-bg">
-     <!-- <nav class="navbar navbar-expand-lg bg-dark"> 
+      <!-- <nav class="navbar navbar-expand-lg bg-dark">
         <button
           class="navbar-toggler"
           type="button"
@@ -207,61 +214,31 @@
             </li>
           </ul>
         </div>
-      </nav>  -->
+      </nav> -->
       <div class="container h-100">
         <div class="row justify-content-center">
           <div
             class="fish-mask d-flex justify-content-center col-xl-6 col-lg-8 col-md-10 col-sm-12"
           >
             <form action="" class="pub-form">
-              <p>會員登入</p>
-              <label for="account ">請輸入帳號</label><br />
+              <p>忘記密碼</p>
+              <div class="forget-text">
+                <h6>請輸入註冊時所使用的E-amil信箱地址，</h6>
+                <h6>我們將會產生一組新的密碼並寄至信箱，讓您重新登入。</h6>
+              </div>
+              <label for="account ">請輸入電子郵件</label><br />
               <input
                 class="w-100 pub-input"
                 type="text"
                 name="acoount"
                 id="account"
               /><br />
-              <small>帳號錯誤或不存在</small>
-
-              <label for="password">請輸入密碼</label><br />
-              <input
-                class="w-100 pub-input"
-                type="text"
-                name="password"
-                id="password"
-              />
-              <small>密碼輸入錯誤</small>
-              <button type="button" class="pub-button mx-auto">登入</button>
-              <a href="#">註冊新帳號</a>
+              <small>電子郵件格式錯誤</small>
               <div class="form-border w-100"></div>
-              <div class="fish-icons d-flex justify-content-between">
-                <a href="#" class="col-4">
-                  <div class="googlelogin">
-                    <div class="google mx-auto"></div>
-                    <p>Google登入</p>
-                  </div>
-                </a>
-                <a href="#" class="col-4">
-                  <div class="facebooklogin">
-                    <div class="facebook mx-auto"></div>
-                    <p>Facebook登入</p>
-                  </div>
-                </a>
-                <!-- <a href="#" class="col-4">
-                  <div class="forgetpassword">
-                    <div class="lock mx-auto"></div>
-                    <p>忘記密碼</p>
-                  </div>
-                </a> -->
 
-                <a href="#" class="col-4">
-                <div class="forgetpassword ">
-                <div class="lock mx-auto"></div>
-                <p>忘記密碼</p>
-              <!-- </div> -->
-            </div>
-              </a>
+              <button type="button" class="pub-button mx-auto">
+                傳送新密碼
+              </button>
             </form>
           </div>
         </div>

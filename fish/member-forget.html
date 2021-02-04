@@ -89,6 +89,43 @@
         margin-right: 5px;
       }
 
+      .pub-form label,
+      input,
+      button,
+      small {
+        font-family: "Noto Sans TC", "Noto serif TC", "Times New Roman", Times,
+          serif;
+        font-weight: 300;
+      }
+
+      .pub-form small {
+        color: #d67b76;
+        font-size: 12px;
+        display: block;
+        text-align: right;
+        height: 26px;
+        margin-top: 6px;
+      }
+      .pub-input {
+        border: solid 1px #cdaa8a;
+        height: 46px;
+        padding-left: 15px;
+      }
+      .pub-form label {
+        font-size: 16px;
+        color: #cdaa8a;
+      }
+
+      .pub-button {
+        background: #000;
+        color: white;
+        text-align: center;
+        width: 260px;
+        height: 50px;
+        font-size: 14px;
+        display: block;
+        margin-top: 24px;
+      }
       .pub-mb-100 {
         margin-bottom: 100px;
       }
@@ -240,16 +277,13 @@
         <div class="col-12 bread-div">
           <a class="clbread" href="">首頁 <span class="clspan">></span></a>
           <a class="clbread" href=""> 會員中心 <span class="clspan">></span></a>
-          <a class="clbread" href=""> 收藏清單 <span class="clspan">></span></a>
-          <a class="clbread" href="">商品收藏 </a>
+          <a class="clbread" href="">個人資訊 </a>
         </div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row">
         <div class="col-2"></div>
         <div class="col-9">
-          <h1 class="fish-topic">
-            <h1 class="fish-topic"><i class="fas fa-bookmark"></i> 商品收藏</h1>
-          </h1>
+          <h1 class="fish-topic"><i class="fas fa-user-edit"> </i> 更改密碼</h1>
         </div>
       </div>
       <div class="row justify-content-center">
@@ -257,22 +291,58 @@
           <h4>會員中心</h4>
           <ul>
             個人資訊
+            <a href="#">
+              <li>編輯個人資訊</li>
+            </a>
+            <a href="#">
+              <li class="fish-aside-active">更改密碼</li>
+            </a>
           </ul>
           <ul>
             收藏清單
-
-            <a href="#">
-              <li class="fish-aside-active">商品收藏</li>
-            </a>
-            <a href="#">
-              <li>活動收藏</li>
-            </a>
           </ul>
           <ul>
             訂單資訊
           </ul>
         </aside>
-        <div class="col-9"></div>
+        <div class="col-9">
+          <div class="w-100 d-flex justify-content-center">
+            <form
+              action=""
+              class="pub-form col-xl-7 col-lg-8 col-md-10 col-sm-12"
+            >
+              <label for="passowrd">請輸入舊密碼</label><br />
+              <input
+                class="w-100 pub-input"
+                type="text"
+                name="passowrd"
+                id="passowrd"
+              /><br />
+              <small></small>
+              <label for="newpassword">請輸入新密碼</label><br />
+              <input
+                class="w-100 pub-input"
+                type="text"
+                name="newpassword"
+                id="password"
+              />
+              <small>密碼需大於六位數</small>
+
+              <label for="newpassowrd2">請再次輸入密碼</label><br />
+              <input
+                class="w-100 pub-input"
+                type="text"
+                name="newpassowrd2"
+                id="newpassowrd2"
+              />
+              <small>再次輸入密碼不相同</small>
+
+              <button type="button" class="pub-button pub-mb-100 mx-auto">
+                儲存修改
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
     <div class="bgup-img"></div>
