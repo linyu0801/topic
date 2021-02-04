@@ -18,76 +18,11 @@
     />
 
     <style>
-      h2 {
-        font-size: 48px;
-        color: #cdaa8a;
-        font-family: "Noto Serif TC";
-        font-weight: bold;
-      }
-
-      h3 {
-        font-size: 24px;
-        color: #250404;
-        font-family: "Noto Serif TC";
-        font-weight: bold;
-        letter-spacing: 3px;
-      }
-
-      h5 {
-        font-family: "Noto Serif TC";
-        font-size: 16px;
-        letter-spacing: 3px;
-        margin-bottom: 0px;
-        font-weight: bold;
-      }
-      h6 {
-        font-size: 14px;
-        font-family: "Noto Serif TC";
-        letter-spacing: 3px;
-      }
-      p {
-        font-size: 12px;
-      }
-
-      .fish-icons p,
-      .pub-form a,
-      .navbar li,
-      .pub-form label,
-      input,
-      button,
-      small {
-        font-family: "Noto Sans TC", "Noto serif TC", "Times New Roman", Times,
-          serif;
-        font-weight: 300;
-      }
-      .fish-icons p,
-      .pub-form a,
-      .pub-form button,
-      .pub-form label {
-        letter-spacing: 3.2px;
-      }
-      .pub-form small {
-        color: #d67b76;
-        font-size: 12px;
-        display: block;
-        text-align: right;
-        height: 26px;
-        margin-top: 6px;
-      }
-      .pub-input {
-        border: none;
-        height: 46px;
-        padding-left: 15px;
-        background: rgba(255, 255, 255, 0.5);
-      }
       .pub-form h6 {
         color: white;
         text-align: center;
       }
-      .pub-form label {
-        font-size: 16px;
-        color: #cdaa8a;
-      }
+
       .pub-form {
         margin-top: 50px;
         margin-bottom: 50px;
@@ -105,7 +40,35 @@
       .pub-form a:hover {
         text-decoration: none;
       }
+      .pub-form small {
+        font-family: "Noto Serif TC";
+        color: #d67b76;
+        font-size: 12px;
+        display: block;
+        text-align: right;
+        height: 26px;
+        margin-top: 6px;
+      }
+      .pub-input {
+        font-family: "Noto Serif TC";
+        letter-spacing: 0.1rem;
+        line-height: 20px;
+        border: solid 1px #cdaa8a;
+        height: 46px;
+        padding-left: 15px;
+      }
+      .pub-form label {
+        font-family: "Noto Serif TC";
+        letter-spacing: 0.1rem;
+        line-height: 20px;
+        font-size: 16px;
+        color: #cdaa8a;
+      }
+
       .pub-button {
+        font-family: "Noto Sans TC";
+        letter-spacing: 0.1rem;
+        line-height: 20px;
         background: #000;
         color: white;
         text-align: center;
@@ -113,16 +76,11 @@
         height: 50px;
         font-size: 14px;
         display: block;
-        border: none;
         margin-top: 24px;
       }
-      /* .mb-100 {
-        margin-top: 136px;
-      } */
-      .pub-form p {
-        font-family: "Noto serif TC", "Noto Sans TC", "Times New Roman", Times,
-          serif;
-        font-size: 36px;
+
+      .pub-form h3 {
+        font-weight: 400;
         color: #cdaa8a;
         text-align: center;
       }
@@ -221,7 +179,7 @@
             class="fish-mask d-flex justify-content-center col-xl-6 col-lg-8 col-md-10 col-sm-12"
           >
             <form action="" class="pub-form">
-              <p>忘記密碼</p>
+              <h3>忘記密碼</h3>
               <div class="forget-text">
                 <h6>請輸入註冊時所使用的E-amil信箱地址，</h6>
                 <h6>我們將會產生一組新的密碼並寄至信箱，讓您重新登入。</h6>
