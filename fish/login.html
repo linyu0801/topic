@@ -16,60 +16,39 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/font.css" />
 
     <style>
-      .fish-icons p,
-      .pub-form a,
-      .navbar li,
-      .pub-form label,
-      input,
-      button,
-      small {
-        font-family: "Noto Sans TC", "Noto serif TC", "Times New Roman", Times,
-          serif;
-        font-weight: 300;
-      }
-      .fish-icons p,
-      .pub-form a,
-      .pub-form button,
-      .pub-form label {
-        letter-spacing: 3.2px;
-      }
-      .pub-form small {
+
+.pub-form small {
+        font-family: "Noto Serif TC";
         color: #d67b76;
         font-size: 12px;
         display: block;
         text-align: right;
         height: 26px;
-        margin-top:6px;
+        margin-top: 6px;
       }
       .pub-input {
-        border: none;
+        font-family: "Noto Serif TC";
+        letter-spacing: 0.1rem;
+        line-height: 20px;
+        border: solid 1px #cdaa8a;
         height: 46px;
         padding-left: 15px;
-        background: rgba(255, 255, 255, 0.5);
       }
       .pub-form label {
+        font-family: "Noto Serif TC";
+        letter-spacing: 0.1rem;
+        line-height: 20px;
         font-size: 16px;
         color: #cdaa8a;
       }
-      .pub-form {
-        margin-top: 150px;
-        width: 80%;
-      }
-      .pub-form a {
-        color: #cdaa8a;
-        display: block;
-        text-align: center;
-        font-size: 14px;
-        margin-top: 40px;
-        margin-bottom: 30px;
-      }
 
-      .pub-form a:hover {
-        text-decoration: none;
-      }
       .pub-button {
+        font-family: "Noto Sans TC";
+        letter-spacing: 0.1rem;
+        line-height: 20px;
         background: #000;
         color: white;
         text-align: center;
@@ -77,29 +56,36 @@
         height: 50px;
         font-size: 14px;
         display: block;
-        border: none;
         margin-top: 24px;
-
+        border: none;
       }
-      /* .mb-100 {
-        margin-top: 136px;
-      } */
-      .pub-form p {
-        font-family: "Noto serif TC", "Noto Sans TC", "Times New Roman", Times,
-          serif;
-        font-size: 36px;
+      .pub-form h3 {
+        font-weight: 400;
         color: #cdaa8a;
         text-align: center;
+        margin-bottom: 40px;
       }
+      .pub-form {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 80%;
+      }
+      .pub-form a {
+        color: #cdaa8a;
+        display: block;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+
+      .pub-form a:hover {
+        text-decoration: none;
+      }
+   
+    
       .form-border {
         border-bottom: #cdaa8a 1px solid;
         margin: 12px 0px 36px 0px;
-      }
-      .navbar-brand,
-      .nav-item a {
-        color: white;
-        margin-right: 60px;
-        font-size: 14px;
       }
 
       footer {
@@ -108,31 +94,33 @@
         background-color: #250404;
       }
       .fish-bg {
-        background: url("./imgs/login.jpg") no-repeat center center;
+        background: url("./imgs/login.jpg") no-repeat  ;
+        background-position:center  -170px ;
         background-size: cover;
         background-color: rgba(0, 0, 0, 0.2);
         background-blend-mode: multiply;
       }
       .fish-mask {
+        padding: 0px 0px 0px 0px;
         margin-top: 100px;
-        background-color: rgba(255, 252, 248, 0.6);
-        opacity: 30%;
-        height: 630px;
-        border: 5px solid #cdaa8a;
-        pointer-events: none;
+        background-color: rgba(255, 252, 248, 0.18);
+        border: 5px solid rgba(205, 170, 138, 0.3);
+        background-clip: padding-box;
+        margin-bottom: 100px;
       }
-      .fish-icons a{
-margin:0 auto;
-}
+      .fish-icons a {
+        margin: 0 auto;
+        padding: 0 0;
+      }
       .fish-icons p {
-        font-size: 14px;
         color: #cdaa8a;
         text-align: center;
         margin-top: 18px;
+        margin-bottom: 0px;
         white-space: nowrap;
       }
       .google {
-        background: url("./icons/google.svg") no-repeat;
+        background: url("./icons/google.svg") no-repeat center center;
         width: 45px;
         height: 40px;
       }
@@ -146,124 +134,123 @@ margin:0 auto;
         width: 45px;
         height: 40px;
       }
-      .fish-icons {
-        margin-bottom: 136px;
-      }
       @media screen and (max-width: 1200px) {
         .fish-mask {
-          display: none;
+          background-color: transparent;
+        border: none;
         }
       }
     </style>
   </head>
   <body class="h-100">
-    <nav class="navbar navbar-expand-lg bg-dark">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="collapse navbar-collapse justify-content-between"
-        id="navbarNav"
-      >
-        <a class="navbar-brand" href="#">icon</a>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">首頁</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">商品</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">體驗</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">場地租借</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">部落格</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">關於我們</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav nav-l">
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-user-alt"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><i class="fas fa-shopping-cart"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
     <div class="fish-bg">
+     <!-- <nav class="navbar navbar-expand-lg bg-dark"> 
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarNav"
+        >
+          <a class="navbar-brand" href="#">icon</a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">商品</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">體驗</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">場地租借</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">部落格</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">關於我們</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav nav-l">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-user-alt"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>  -->
       <div class="container h-100">
         <div class="row justify-content-center">
           <div
-            class="fish-mask col-xl-5 col-lg-6 col-md-8 position-absolute"
-          ></div>
-        </div>
-        <div class="row justify-content-center">
-          <div
-            class="d-flex justify-content-center col-xl-6 col-lg-8 col-md-10 col-sm-12"
+            class="fish-mask d-flex justify-content-center col-xl-6 col-lg-8 col-md-10 col-sm-12"
           >
-          <form action="" class="pub-form">
-            <p>會員登入</p>
-            <label for="account ">請輸入帳號</label><br />
-            <input
-              class="w-100 pub-input"
-              type="text"
-              name="acoount"
-              id="account"
-            /><br />
-            <small>帳號錯誤或不存在</small>
+            <form action="" class="pub-form">
+              <h3>會員登入</h3>
+              <label for="account ">請輸入帳號</label><br />
+              <input
+                class="w-100 pub-input"
+                type="text"
+                name="acoount"
+                id="account"
+              /><br />
+              <small>帳號錯誤或不存在</small>
 
-            <label for="password">請輸入密碼</label><br />
-            <input
-              class="w-100 pub-input"
-              type="text"
-              name="password"
-              id="password"
-            />
-            <small>1234</small>
-            <button type="button" class="pub-button mx-auto">登入</button>
-            <a href="#">註冊新帳號</a>
-            <div class="form-border w-100"></div>
-            <div class="fish-icons d-flex justify-content-between">
-              <a href="#" class="col-4">
-              <div class="googlelogin  ">
-                <div class="google mx-auto"></div>
-                <p>Google登入</p>
-              </div>
-              </a >
-              <a href="#" class="col-4">
-              <div class="facebooklogin ">
-                <div class="facebook mx-auto"></div>
-                <p>Facebook登入</p>
-              </div>
-            </a>
-            <a href="#" class="col-4">
-              <div class="forgetpassword ">
+              <label for="password">請輸入密碼</label><br />
+              <input
+                class="w-100 pub-input"
+                type="text"
+                name="password"
+                id="password"
+              />
+              <small>密碼輸入錯誤</small>
+              <button type="button" class="pub-button mx-auto">登入</button>
+              <a href="#">註冊新帳號</a>
+              <div class="form-border w-100"></div>
+              <div class="fish-icons d-flex justify-content-between">
+                <a href="#" class="col-4">
+                  <div class="googlelogin">
+                    <div class="google mx-auto"></div>
+                    <p>Google登入</p>
+                  </div>
+                </a>
+                <a href="#" class="col-4">
+                  <div class="facebooklogin">
+                    <div class="facebook mx-auto"></div>
+                    <p>Facebook登入</p>
+                  </div>
+                </a>
+                <!-- <a href="#" class="col-4">
+                  <div class="forgetpassword">
+                    <div class="lock mx-auto"></div>
+                    <p>忘記密碼</p>
+                  </div>
+                </a> -->
+
+                <a href="#" class="col-4">
+                <div class="forgetpassword ">
                 <div class="lock mx-auto"></div>
                 <p>忘記密碼</p>
-              </div>
-            <!-- </div> -->
-          </a>
-          </form>
+              <!-- </div> -->
+            </div>
+              </a>
+            </form>
           </div>
         </div>
       </div>
