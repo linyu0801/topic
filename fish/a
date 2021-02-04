@@ -1,0 +1,37 @@
+<span>訂單編號</span>
+            <span>訂購日期</span>
+            <span>訂單金額</span>
+            <span>付款方式</span>
+            <span>配送方式</span>
+            <span>訂單狀態</span>
+            <!-- <table>
+              <thead>
+                <tr class="d-flex justify-content-between">
+                  <th scope="col">訂單編號</th>
+                  <th scope="col">訂購日期</th>
+                  <th scope="col">訂單金額</th>
+                  <th scope="col">付款方式</th>
+                  <th scope="col">配送方式</th>
+                  <th scope="col">訂單狀態</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mark</td>
+                  <td>Mark</td>
+                  <td>Mark</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+              </tbody>
+            </table> -->
+          </div>
+          <!-- <div class="w-100 fish-order-pd d-flex justify-content-between">
+            <span>12345</span>
+            <span>2020/01/11</span>
+            <span>800</span>
+            <span>銀行轉帳</span>
+            <span>宅配</span>
+            <span>已送達</span>
+          </div> -->
