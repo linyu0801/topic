@@ -18,6 +18,9 @@
     />
     <link rel="stylesheet" href="./css/font.css" />
     <style>
+      body {
+        overflow-x: hidden;
+      }
       .fish-aside ul {
         font-family: "Noto Sans TC";
         font-weight: 300;
@@ -373,20 +376,43 @@
       <div class="row justify-content-center">
         <aside class="fish-aside h-100 col-2">
           <h4>會員中心</h4>
-          <ul>
+          <ul data-toggle="collapse" data-target="#collapse-info">
             個人資訊
+            <ul id="collapse-info" class="collapse">
+              <a href="#">
+                <li class="fish-aside">編輯個人資訊</li>
+              </a>
+              <a href="#">
+                <li class="fish-aside">更改密碼</li>
+              </a>
+            </ul>
           </ul>
-          <ul>
+          <ul data-toggle="collapse" data-target="#collapse-fav">
             收藏清單
-            <a href="#">
-              <li>商品收藏</li>
-            </a>
-            <a href="#">
-              <li class="fish-aside-active">活動收藏</li>
-            </a>
+
+            <ul id="collapse-fav" class="collapse show">
+              <a href="#">
+                <li class="fish-aside">商品收藏</li>
+              </a>
+              <a href="#">
+                <li class="fish-aside-active">活動收藏</li>
+              </a>
+            </ul>
           </ul>
-          <ul>
+          <ul data-toggle="collapse" data-target="#collapseorder">
             訂單資訊
+
+            <ul id="collapseorder" class="collapse">
+              <a href="#">
+                <li class="fish-aside">商品訂單</li>
+              </a>
+              <a href="#">
+                <li class="fish-aside">活動訂單</li>
+              </a>
+              <a href="#">
+                <li class="fish-aside">場地租借</li>
+              </a>
+            </ul>
           </ul>
         </aside>
         <div class="col-9">
@@ -629,20 +655,20 @@
           </nav>
         </div>
       </div>
+      <div class="bgup-img"></div>
+      <div class="bgdown-img"></div>
     </div>
-    <div class="bgup-img"></div>
-    <div class="bgdown-img"></div>
 
     <footer class="footer mt-auto py-3"></footer>
   </body>
   <script
-    src="https://code.jquery.com/jquery-3.5.1.js"
-    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"
   ></script>
   <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"
   ></script>
   <script></script>

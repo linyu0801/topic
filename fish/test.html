@@ -6,8 +6,8 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
     <link
@@ -23,8 +23,8 @@
         overflow-x: hidden;
       }
       .fish-aside ul {
-        font-weight: 300;
         font-family: "Noto Sans TC";
+        font-weight: 300;
         font-size: 16px;
         line-height: 20px;
         letter-spacing: 0.1rem;
@@ -59,6 +59,7 @@
         margin-bottom: 50px;
         color: #250404;
       }
+
       .fish-aside ul a:hover {
         text-decoration: none;
       }
@@ -74,6 +75,44 @@
         margin-right: 5px;
       }
 
+      .pub-form small {
+        font-family: "Noto Serif TC";
+        color: #d67b76;
+        font-size: 12px;
+        display: block;
+        text-align: right;
+        height: 26px;
+        margin-top: 6px;
+      }
+      .pub-input {
+        font-family: "Noto Serif TC";
+        letter-spacing: 0.1rem;
+        line-height: 20px;
+        border: solid 1px #cdaa8a;
+        height: 46px;
+        padding-left: 15px;
+      }
+      .pub-form label {
+        font-family: "Noto Serif TC";
+        letter-spacing: 0.1rem;
+        line-height: 20px;
+        font-size: 16px;
+        color: #cdaa8a;
+      }
+
+      .pub-button {
+        font-family: "Noto Sans TC";
+        letter-spacing: 0.1rem;
+        line-height: 20px;
+        background: #000;
+        color: white;
+        text-align: center;
+        width: 260px;
+        height: 50px;
+        font-size: 14px;
+        display: block;
+        margin-top: 24px;
+      }
       .pub-mb-100 {
         margin-bottom: 100px;
       }
@@ -89,7 +128,6 @@
         width: 100%;
         height: 388px;
         background-color: #250404;
-        z-index: 2;
       }
 
       input[type="date"]::-webkit-calendar-picker-indicator {
@@ -134,12 +172,13 @@
         width: 276px;
         height: 276px;
         transform: rotate(230deg);
-        pointer-events: none;
+        overflow: hidden;
       }
 
       .bgdown-img::before {
         content: " ";
         background-image: url(./icons/goldbg.svg);
+        /* background-repeat: no-repeat; */
         background-size: cover;
         position: absolute;
         left: -130px;
@@ -147,48 +186,10 @@
         width: 450px;
         height: 450px;
         transform: rotate(350deg);
-        z-index: 1;
-        pointer-events: none;
+        z-index: -1;
+        overflow: hidden;
       }
 
-      .fish-order {
-        border: 1px solid #cdaa8a;
-      }
-      .fish-order h6 {
-        display: block;
-        text-align: center;
-      }
-      .fish-order-mt {
-        margin: 50px 0px 100px 0px;
-      }
-      .fish-order-pd {
-        padding: 30px 30px;
-      }
-      .fish-order-pd a {
-        color: #cdaa8a;
-      }
-      .fish-order-text {
-        padding-top: 50px;
-      }
-      .hoyu-page-link {
-        border: none;
-        font-family: "Noto Serif TC";
-        color: #bebebe;
-        font-size: 24px;
-        /* padding: 0 8px; */
-      }
-
-      .hoyu-page-link:hover {
-        color: #cdaa8a;
-        background: none;
-        border: none;
-      }
-
-      .hoyu-page-arrow {
-        font-size: 12px;
-        line-height: 30px;
-        /* padding: 0 14px; */
-      }
       @media screen and (max-width: 992px) {
         .bgdown-img {
           display: none;
@@ -208,7 +209,7 @@
   </head>
 
   <body class="h-100">
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <!-- <nav class="navbar navbar-expand-lg bg-dark">
       <button
         class="navbar-toggler"
         type="button"
@@ -259,21 +260,21 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
 
     <div class="container h-100">
       <div class="row">
         <div class="col-12 bread-div">
           <a class="clbread" href="">首頁 <span class="clspan">></span></a>
           <a class="clbread" href=""> 會員中心 <span class="clspan">></span></a>
-          <a class="clbread" href=""> 訂單資訊 <span class="clspan">></span></a>
-          <a class="clbread" href="">活動訂單 </a>
+          <a class="clbread" href=""> 個人資訊 <span class="clspan">></span></a>
+          <a class="clbread" href="">更改密碼 </a>
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-2"></div>
         <div class="col-9">
-          <h2 class="fish-topic"><i class="fab fa-wpforms"></i> 活動訂單</h2>
+          <h2 class="fish-topic"><i class="fas fa-user-edit"> </i> 更改密碼</h2>
         </div>
       </div>
       <div class="row justify-content-center">
@@ -281,12 +282,12 @@
           <h4>會員中心</h4>
           <ul data-toggle="collapse" data-target="#collapse-info">
             個人資訊
-            <ul id="collapse-info" class="collapse">
+            <ul id="collapse-info" class="collapse show">
               <a href="#">
                 <li>編輯個人資訊</li>
               </a>
               <a href="#">
-                <li class="fish-aside">更改密碼</li>
+                <li class="fish-aside-active">更改密碼</li>
               </a>
             </ul>
           </ul>
@@ -295,7 +296,7 @@
 
             <ul id="collapse-fav" class="collapse">
               <a href="#">
-                <li class="fish-aside">商品收藏</li>
+                <li class="fish-aside-active">商品收藏</li>
               </a>
               <a href="#">
                 <li>活動收藏</li>
@@ -305,105 +306,83 @@
           <ul data-toggle="collapse" data-target="#collapseorder">
             訂單資訊
 
-            <ul id="collapseorder" class="collapse show">
+            <ul id="collapseorder" class="collapse">
               <a href="#">
                 <li class="fish-aside">商品訂單</li>
               </a>
               <a href="#">
-                <li class="fish-aside-active">活動訂單</li>
+                <li class="fish-aside">活動訂單</li>
               </a>
               <a href="#">
-                <li class="fish-aside">場地租借</li>
+                <li class="fish-aside-active">場地租借</li>
               </a>
             </ul>
           </ul>
         </aside>
         <div class="col-9">
-          <div
-            class="w-100 fish-order fish-order-pd d-flex justify-content-between"
-          >
-            <div class="col-2">
-              <h6>訂單編號</h6>
-              <a href="#"> <h6 class="fish-order-text">123456</h6> </a>
-              <a href="#"> <h6 class="fish-order-text">123456</h6> </a>
-              <a href="#"> <h6 class="fish-order-text">123456</h6> </a>
-              <a href="#"> <h6 class="fish-order-text">123456</h6> </a>
-              <a href="#"> <h6 class="fish-order-text">123456</h6> </a>
-            </div>
-            <div class="col-6">
-              <h6>活動名稱</h6>
-              <h6 class="fish-order-text">Funsiamo 甜點蛋糕 DIY 手作</h6>
-              <h6 class="fish-order-text">Funsiamo 甜點蛋糕 DIY 手作</h6>
-              <h6 class="fish-order-text">Funsiamo 甜點蛋糕 DIY 手作</h6>
-              <h6 class="fish-order-text">Funsiamo 甜點蛋糕 DIY 手作</h6>
-              <h6 class="fish-order-text">Funsiamo 甜點蛋糕 DIY 手作</h6>
-            </div>
-            <div class="col-2">
-              <h6>訂購日期</h6>
-              <h6 class="fish-order-text">2020/12/15</h6>
-              <h6 class="fish-order-text">2020/12/15</h6>
-              <h6 class="fish-order-text">2020/12/15</h6>
-              <h6 class="fish-order-text">2020/12/15</h6>
-              <h6 class="fish-order-text">2020/12/15</h6>
-            </div>
-            <div class="col-2">
-              <h6>訂單金額</h6>
-              <h6 class="fish-order-text">500</h6>
-              <h6 class="fish-order-text">1500</h6>
-              <h6 class="fish-order-text">1800</h6>
-              <h6 class="fish-order-text">180</h6>
-              <h6 class="fish-order-text">180</h6>
-            </div>
+          <div class="w-100 d-flex justify-content-center">
+            <!-- <form
+              action=""
+              class="pub-form col-xl-7 col-lg-8 col-md-10 col-sm-12"
+            >
+              <label for="passowrd">請輸入舊密碼</label><br />
+              <input
+                class="w-100 pub-input"
+                type="text"
+                name="passowrd"
+                id="passowrd"
+              /><br />
+              <small></small>
+              <label for="newpassword">請輸入新密碼</label><br />
+              <input
+                class="w-100 pub-input"
+                type="text"
+                name="newpassword"
+                id="password"
+              />
+              <small>密碼需大於六位數</small>
+
+              <label for="newpassowrd2">請再次輸入密碼</label><br />
+              <input
+                class="w-100 pub-input"
+                type="text"
+                name="newpassowrd2"
+                id="newpassowrd2"
+              />
+              <small>再次輸入密碼不相同</small>
+
+              <button type="button" class="pub-button pub-mb-100 mx-auto">
+                儲存修改
+              </button>
+            </form> -->
+            <!-- <p>
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-toggle="collapse"
+                data-target="#multiCollapseExample2"
+               
+              >
+                Toggle second element
+              </button>
+            </p>
+            <div class="row">
+              <div class="col">
+                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                  <div class="card card-body">Anim</div>
+                </div>
+              </div>
+            </div> -->
           </div>
-          <nav aria-label="Page navigation example" class="fish-order-mt">
-            <ul class="pagination justify-content-center">
-              <li class="page-item">
-                <a
-                  class="page-link hoyu-page-link hoyu-page-arrow"
-                  href="#"
-                  aria-label="Previous"
-                >
-                  <span aria-hidden="true"
-                    ><i class="fas fa-chevron-left"></i
-                  ></span>
-                </a>
-              </li>
-              <li class="page-item">
-                <a class="page-link hoyu-page-link" href="#">1</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link hoyu-page-link" href="#">2</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link hoyu-page-link" href="#">3</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link hoyu-page-link" href="#">4</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link hoyu-page-link" href="#">5</a>
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link hoyu-page-link hoyu-page-arrow"
-                  href="#"
-                  aria-label="Next"
-                >
-                  <span aria-hidden="true"
-                    ><i class="fas fa-chevron-right"></i
-                  ></span>
-                </a>
-              </li>
-            </ul>
-          </nav>
         </div>
       </div>
     </div>
     <div class="bgup-img"></div>
     <div class="bgdown-img"></div>
 
-    <footer class="footer mt-auto py-3"></footer>
+    <!-- <footer class="footer mt-auto py-3"></footer> -->
   </body>
+
   <script
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
