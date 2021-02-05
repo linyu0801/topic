@@ -55,6 +55,7 @@
         margin: 20px 0 20px 0;
       }
       .fish-aside h4 {
+        white-space: nowrap;
         margin-bottom: 50px;
         color: #250404;
       }
@@ -75,6 +76,7 @@
         font-weight: 400;
         margin-top: 10px;
         margin-bottom: 50px;
+        white-space: nowrap;
       }
 
       .fish-topic i {
@@ -253,6 +255,7 @@
       .fish-fav-mt {
         margin: 2px auto 50px auto;
       }
+
       @media screen and (max-width: 992px) {
         .bgdown-img {
           display: none;
@@ -263,8 +266,19 @@
       }
 
       @media screen and (max-width: 768px) {
+        h2 {
+          font-size: 36px;
+        }
         aside {
           display: none;
+        }
+      }
+      @media screen and (max-width: 414px) {
+        .fish-topic {
+          margin-bottom: 20px;
+        }
+        h2 {
+          font-size: 24px;
         }
       }
     </style>
@@ -336,7 +350,9 @@
       <div class="row justify-content-center">
         <div class="col-2"></div>
         <div class="col-9">
-          <h2 class="fish-topic"><i class="fas fa-bookmark"></i> 商品收藏</h2>
+          <h2 class="fish-topic md-fs">
+            <i class="fas fa-bookmark"></i>商品收藏
+          </h2>
         </div>
       </div>
       <div class="row justify-content-center">
@@ -354,7 +370,6 @@
             </ul>
           </ul>
           <ul data-toggle="collapse" data-target="#collapse-fav">
-            
             <p class="fish-aside-ul-active">收藏清單</p>
             <ul id="collapse-fav" class="collapse show">
               <a href="#">
@@ -382,7 +397,7 @@
           </ul>
         </aside>
         <div class="col-9 d-flex flex-wrap">
-          <div class="col-4">
+          <div class="col-xl-4 col-lg-5 col-md-6">
             <div class="product card fish-card w-100 position-relative">
               <div class="fish-img-box w-100">
                 <a href="#123"> <i class="far fa-times-circle"></i> </a>
@@ -407,7 +422,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-xl-4 col-lg-5 col-md-6">
             <div class="product card fish-card w-100 position-relative">
               <div class="fish-img-box w-100">
                 <a href="#123"> <i class="far fa-times-circle"></i> </a>
@@ -432,7 +447,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-xl-4 col-lg-5 col-md-6">
             <div class="product card fish-card w-100 position-relative">
               <div class="fish-img-box w-100">
                 <a href="#123"> <i class="far fa-times-circle"></i> </a>
@@ -457,7 +472,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-xl-4 col-lg-5 col-md-6">
             <div class="product card fish-card w-100 position-relative">
               <div class="fish-img-box w-100">
                 <a href="#123"> <i class="far fa-times-circle"></i> </a>
@@ -482,7 +497,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-xl-4 col-lg-5 col-md-6">
             <div class="product card fish-card w-100 position-relative">
               <div class="fish-img-box w-100">
                 <a href="#123"> <i class="far fa-times-circle"></i> </a>
@@ -507,7 +522,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-xl-4 col-lg-5 col-md-6">
             <div class="product card fish-card w-100 position-relative">
               <div class="fish-img-box w-100">
                 <a href="#123"> <i class="far fa-times-circle"></i> </a>
@@ -532,7 +547,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-xl-4 col-lg-5 col-md-6">
             <div class="product card fish-card w-100 position-relative">
               <div class="fish-img-box w-100">
                 <a href="#123"> <i class="far fa-times-circle"></i> </a>
@@ -557,7 +572,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-xl-4 col-lg-5 col-md-6">
             <div class="product card fish-card w-100 position-relative">
               <div class="fish-img-box w-100">
                 <a href="#123"> <i class="far fa-times-circle"></i> </a>
@@ -582,7 +597,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-xl-4 col-lg-5 col-md-6">
             <div class="product card fish-card w-100 position-relative">
               <div class="fish-img-box w-100">
                 <a href="#123"> <i class="far fa-times-circle"></i> </a>
@@ -607,6 +622,7 @@
               </div>
             </div>
           </div>
+
           <nav aria-label="Page navigation example" class="fish-fav-mt w-100">
             <ul class="pagination justify-content-center">
               <li class="page-item">
