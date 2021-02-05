@@ -64,6 +64,7 @@
         margin: 20px 0 20px 0;
       }
       .fish-aside h4 {
+        white-space: nowrap;
         margin-bottom: 50px;
         color: #250404;
       }
@@ -196,19 +197,67 @@
         line-height: 30px;
         /* padding: 0 14px; */
       }
-      @media screen and (max-width: 992px) {
+      .mob-order {
+        display: none;
+      }
+      @media screen and (max-width: 1200px) {
         .bgdown-img {
           display: none;
         }
-
+        .dis-none {
+          display: none;
+        }
         .bgup-img {
           display: none;
         }
       }
-
+      @media screen and (max-width: 768px) {
+        .fish-order-pd {
+          padding: 20px 15px;
+        }
+        .desk-order {
+          display: none;
+        }
+        .mob-order {
+          display: block;
+          padding-bottom: 32px;
+        }
+        .mob-order h6 {
+          text-align: left;
+          /* padding-bottom: px; */
+        }
+        .mob-topic h6 {
+          text-align: right;
+        }
+      }
       @media screen and (max-width: 768px) {
         aside {
           display: none;
+        }
+        h2 {
+          font-size: 36px;
+        }
+      }
+      @media screen and (max-width: 414px) {
+        .fish-topic {
+          margin-bottom: 20px;
+        }
+        h2 {
+          font-size: 24px;
+        }
+      }
+      @media screen and (max-width: 413px) {
+        .fish-order-pd {
+          padding: 15px 0px;
+        }
+        .mob-order {
+          padding-bottom: 0px;
+        }
+        .fish-order {
+          border: none;
+        }
+        .mob-pd {
+          padding: 0 5px;
         }
       }
     </style>
@@ -325,12 +374,12 @@
             </ul>
           </ul>
         </aside>
-        <div class="col-9">
+        <div class="col-9 desk-order">
           <div
             class="w-100 fish-order fish-order-pd d-flex justify-content-between"
           >
             <div class="col-2">
-              <h6>訂單資訊</h6>
+              <h6>訂單編號</h6>
               <a href="#"> <h6 class="fish-order-text">123456</h6> </a>
               <a href="#"> <h6 class="fish-order-text">123456</h6> </a>
               <a href="#"> <h6 class="fish-order-text">123456</h6> </a>
@@ -345,7 +394,7 @@
               <h6 class="fish-order-text">大安館</h6>
               <h6 class="fish-order-text">大安館</h6>
             </div>
-            <div class="col-2">
+            <div class="col-2 dis-none">
               <h6>租借日期</h6>
               <h6 class="fish-order-text">2020/12/15</h6>
               <h6 class="fish-order-text">2020/12/15</h6>
@@ -377,6 +426,154 @@
               <h6 class="fish-order-text">銀行轉帳</h6>
               <h6 class="fish-order-text">銀行轉帳</h6>
               <h6 class="fish-order-text">銀行轉帳</h6>
+            </div>
+          </div>
+          <nav aria-label="Page navigation example" class="fish-order-mt">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a
+                  class="page-link hoyu-page-link hoyu-page-arrow"
+                  href="#"
+                  aria-label="Previous"
+                >
+                  <span aria-hidden="true"
+                    ><i class="fas fa-chevron-left"></i
+                  ></span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link hoyu-page-link" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link hoyu-page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link hoyu-page-link" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link hoyu-page-link" href="#">4</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link hoyu-page-link" href="#">5</a>
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link hoyu-page-link hoyu-page-arrow"
+                  href="#"
+                  aria-label="Next"
+                >
+                  <span aria-hidden="true"
+                    ><i class="fas fa-chevron-right"></i
+                  ></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-8">
+          <div class="mob-order">
+            <div class="w-100 fish-order fish-order-pd d-flex">
+              <div class="col-6 mob-pd mob-topic">
+                <h6>訂單編號</h6>
+                <h6>租借館別</h6>
+                <h6>租借日期</h6>
+                <h6>租借時數</h6>
+                <h6>訂單金額</h6>
+                <h6>付款方式</h6>
+              </div>
+              <div class="col-6 mob-pd">
+                <a href="#"> <h6>123456</h6> </a>
+                <h6>大安館</h6>
+                <h6>2020/02/15</h6>
+                <h6>2hr</h6>
+
+                <h6>800</h6>
+                <h6>銀行轉帳</h6>
+              </div>
+            </div>
+          </div>
+          <div class="mob-order">
+            <div class="w-100 fish-order fish-order-pd d-flex">
+              <div class="col-6 mob-pd mob-topic">
+                <h6>訂單編號</h6>
+                <h6>租借館別</h6>
+                <h6>租借日期</h6>
+                <h6>租借時數</h6>
+                <h6>訂單金額</h6>
+                <h6>付款方式</h6>
+              </div>
+              <div class="col-6 mob-pd">
+                <a href="#"> <h6>123456</h6> </a>
+                <h6>大安館</h6>
+                <h6>2020/02/15</h6>
+                <h6>2hr</h6>
+
+                <h6>800</h6>
+                <h6>銀行轉帳</h6>
+              </div>
+            </div>
+          </div>
+          <div class="mob-order">
+            <div class="w-100 fish-order fish-order-pd d-flex">
+              <div class="col-6 mob-pd mob-topic">
+                <h6>訂單編號</h6>
+                <h6>租借館別</h6>
+                <h6>租借日期</h6>
+                <h6>租借時數</h6>
+                <h6>訂單金額</h6>
+                <h6>付款方式</h6>
+              </div>
+              <div class="col-6 mob-pd">
+                <a href="#"> <h6>123456</h6> </a>
+                <h6>大安館</h6>
+                <h6>2020/02/15</h6>
+                <h6>2hr</h6>
+
+                <h6>800</h6>
+                <h6>銀行轉帳</h6>
+              </div>
+            </div>
+          </div>
+          <div class="mob-order">
+            <div class="w-100 fish-order fish-order-pd d-flex">
+              <div class="col-6 mob-pd mob-topic">
+                <h6>訂單編號</h6>
+                <h6>租借館別</h6>
+                <h6>租借日期</h6>
+                <h6>租借時數</h6>
+                <h6>訂單金額</h6>
+                <h6>付款方式</h6>
+              </div>
+              <div class="col-6 mob-pd">
+                <a href="#"> <h6>123456</h6> </a>
+                <h6>大安館</h6>
+                <h6>2020/02/15</h6>
+                <h6>2hr</h6>
+
+                <h6>800</h6>
+                <h6>銀行轉帳</h6>
+              </div>
+            </div>
+          </div>
+          <div class="mob-order">
+            <div class="w-100 fish-order fish-order-pd d-flex">
+              <div class="col-6 mob-pd mob-topic">
+                <h6>訂單編號</h6>
+                <h6>租借館別</h6>
+                <h6>租借日期</h6>
+                <h6>租借時數</h6>
+                <h6>訂單金額</h6>
+                <h6>付款方式</h6>
+              </div>
+              <div class="col-6 mob-pd">
+                <a href="#"> <h6>123456</h6> </a>
+                <h6>大安館</h6>
+                <h6>2020/02/15</h6>
+                <h6>2hr</h6>
+
+                <h6>800</h6>
+                <h6>銀行轉帳</h6>
+              </div>
             </div>
           </div>
           <nav aria-label="Page navigation example" class="fish-order-mt">
