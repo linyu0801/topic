@@ -43,6 +43,15 @@
         list-style: none;
         color: #250404;
       }
+      .fish-aside-ul-active {
+        color: #cdaa8a;
+        font-weight: 300;
+        font-family: "Noto Sans TC";
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.1rem;
+        list-style: none;
+      }
       .fish-aside a :hover {
         color: #cdaa8a;
       }
@@ -154,6 +163,7 @@
       .fish-order h6 {
         display: block;
         text-align: center;
+        white-space: nowrap;
       }
       .fish-order-mt {
         margin: 50px 0px 100px 0px;
@@ -300,7 +310,7 @@
             </ul>
           </ul>
           <ul data-toggle="collapse" data-target="#collapseorder">
-            訂單資訊
+            <p class="fish-aside-ul-active">訂單資訊</p>
 
             <ul id="collapseorder" class="collapse show">
               <a href="#">

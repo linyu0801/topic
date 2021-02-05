@@ -61,7 +61,15 @@
       .fish-aside ul a:hover {
         text-decoration: none;
       }
-
+      .fish-aside-ul-active {
+        color: #cdaa8a;
+        font-weight: 300;
+        font-family: "Noto Sans TC";
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.1rem;
+        list-style: none;
+      }
       .fish-topic {
         color: #cdaa8a;
         font-weight: 400;
@@ -346,8 +354,8 @@
             </ul>
           </ul>
           <ul data-toggle="collapse" data-target="#collapse-fav">
-            收藏清單
-
+            
+            <p class="fish-aside-ul-active">收藏清單</p>
             <ul id="collapse-fav" class="collapse show">
               <a href="#">
                 <li class="fish-aside-active">商品收藏</li>
