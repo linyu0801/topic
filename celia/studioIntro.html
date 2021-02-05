@@ -139,17 +139,28 @@
       border: solid 2px #cdaa8a;
       margin: 0px 15px;
       background-color: #FFF8EA;
+      list-style-type: none
+    }
 
+    .pub-form:hover {
+      box-shadow: 0 6px 6px 0 rgba(0, 0, 0, .2);
+      transition: all .2s ease-in-out;
+    }
+
+    .clpub-form:hover {
+      box-shadow: 0 6px 6px 0 rgba(0, 0, 0, .2);
+      transition: all .2s ease-in-out;
     }
 
 
+
     .IntroTitle {
-      margin: 30px 0;
+      margin: 20px 0;
     }
 
     .IntroTitleSmall {
       color: #cdaa8a;
-      margin: 30px;
+      margin: 20px;
 
 
 
@@ -170,6 +181,10 @@
       font-weight: 300;
     }
 
+    .fa-exclamation-triangle {
+      color: #d67b76;
+    }
+
     .pub-form small {
       color: #d67b76;
       font-size: 10px;
@@ -187,7 +202,7 @@
 
     .pub-form label {
       font-size: 16px;
-      color: #cdaa8a;
+      color: #250404;
 
     }
 
@@ -200,6 +215,7 @@
       height: 50px;
       font-size: 14px;
       display: block;
+      margin-top: 80px;
     }
 
     .pub-mb-100 {
@@ -237,6 +253,7 @@
       justify-content: center;
     }
 
+
     @media (max-width: 415px),
     print {
 
@@ -262,6 +279,8 @@
       .pub-form {
         margin-bottom: 20px;
       }
+
+
 
 
     }
@@ -310,6 +329,32 @@
       width: 250px;
       top: -250px;
       z-index: -1;
+    }
+
+    .clatention {
+      list-style-type: none;
+      margin: 0px
+    }
+
+    .equiment {
+      color: #250404;
+      letter-spacing: 0.1rem;
+
+    }
+
+    .atention {
+      color: #250404;
+      letter-spacing: 0.1rem;
+      margin-left: 0;
+    }
+
+    .wrapatention {
+      width: 80%;
+      margin-left: -15px;
+    }
+
+    .clcount {
+      color: #250404;
     }
 
     @media (max-width: 415px),
@@ -455,23 +500,23 @@
                 <input class="w-100 pub-input" type="text" name="tel" id="tel" />
                 <div class="orderWrap ">
                   <ul class=" orderDate d-flex justify-content-between">
-                    <li>日期:</li>
-                    <span class="clorder">222222</span>
+                    <li class="clcount">日期:</li>
+                    <span class="clorder"><i class="fas fa-dollar-sign"></i> 222222</span>
                   </ul>
                   <ul class=" orderNumber d-flex justify-content-between">
-                    <li>人數:</li>
-                    <span class="clorder">222222</span>
+                    <li class="clcount">人數:</li>
+                    <span class="clorder"></i> 222222</span>
                   </ul>
                   <ul class=" orderTime d-flex justify-content-between">
-                    <li>時段:</li>
-                    <span class="clorder">222222</span>
+                    <li class="clcount">時段:</li>
+                    <span class="clorder"><i class="fas fa-dollar-sign"></i> 222222</span>
 
                   </ul>
                   <hr class="orderHr">
 
                   <ul class=" orderTime d-flex justify-content-between">
-                    <li>小記:</li>
-                    <span class="clorder">222222</span>
+                    <li class="clcount">金額 :</li>
+                    <span class="clorder"><i class="fas fa-dollar-sign"></i> 222222</span>
 
                   </ul>
                 </div>
@@ -484,33 +529,37 @@
 
             <form action="" class="clpub-form col-lg-6 col-12 ">
               <h2 class="IntroTitle">教室介紹</h2>
-              <h3 class="IntroTitleSmall">配備</h3>
-              <ul>
-                <li class="equiment">123456</li>
-                <li class="equiment">123456</li>
-                <li class="equiment">123456</li>
-                <li class="equiment">123456</li>
-                <li class="equiment">123456</li>
-                <li class="equiment">123456</li>
-                <li class="equiment">123456</li>
-                <li class="equiment">123456</li>
-                <li class="equiment">123456</li>
-                <li class="equiment">123456</li>
-                <li class="equiment">123456</li>
-                <li class="equiment">123456</li>
+              <h3 class="IntroTitleSmall">配備/費用</h3>
+              <ul class="equimentfee">
+                <li class="equiment">7組專業烤箱</li>
+                <li class="equiment">7組專業攪拌機</li>
+                <li class="equiment">2台發醱箱</li>
+                <li class="equiment">6台工作台面</li>
+                <li class="equiment">4台洗手槽</li>
+                <li class="equiment">7組考試專業器具(含乙、丙級器具)</li>
+                <li class="equiment">1台壓麵機</li>
+                <li class="equiment">1台冰沙機</li>
+                <li class="equiment">1台丹麥機</li>
+                <li class="equiment">1台急速冷凍櫃</li>
+                <li class="equiment">上午時段收費:6000/3h</li>
+                <li class="equiment">下午時段收費:6000/3h</li>
               </ul>
+              <h3 class="IntroTitleSmall">注意事項</h3>
+              <div class="wrapatention">
+                <ul class="clatention"> <i class="fas fa-exclamation-triangle"></i>
+                  <li class="atention">
+                    借用收費以單位時段三小時為計算單位，借用未足一單位時段者，以一單位時段計算。
+                  </li>
+                  <i class="fas fa-exclamation-triangle"></i>
+                  <li class="atention">與教室確認登記租借日期及時段後，需先預付租借總費用 1/2
+                    的金額以作訂金（繳費匯款方式在與教</li>
+                  <i class="fas fa-exclamation-triangle"></i>
+                  <li class="atention">當天活動開始前繳付押金3000
+                    元予教室現場工作人員，待歸還檢查無誤後方可全額退還。</li>
 
-              <h3 class="IntroTitleSmall">收費</h3>
-              <ul>
-                <li class="equiment">123456</li>
-                <li class="equiment">123456</li>
-                <li class="equiment">123456</li>
-                <li class="equiment">123456</li>
-                <li class="equiment">123456</li>
-                <li class="equiment">123456</li>
-                <li class="equiment">123456</li>
+                </ul>
+              </div>
 
-              </ul>
 
 
 
