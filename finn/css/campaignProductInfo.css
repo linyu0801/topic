@@ -193,5 +193,83 @@
     margin-bottom: 30px;
 }
 
+@media screen and (max-width: 575.98px) { 
+    h4{
+        font-size: 16px;
+    }
 
+    p{
+        margin-bottom: 15px;
+    }
 
+    .wrapper-navbar{
+        height: 70px;
+    }
+
+    .carouselRow{
+        padding: 0;
+    }
+
+    .carousel-inner{
+        height: 250px;
+    }
+    
+    .carousel{
+        margin-bottom: 15px;
+    }
+
+    .productReviews{
+        margin-bottom: 10px;
+    }
+
+    .productReviews>p{
+        margin-bottom: 0px;
+    }
+
+    .productTimeLocation>p{
+        padding: 15px 0px;
+    }
+
+    iframe{
+        height: 350px;
+    }
+
+    .productInfoContent{
+        margin-bottom: 30px;
+    }
+
+    .addToCartCardPhone{
+        background-color: #ffeed3;
+        padding: 15px 20px;
+        opacity: 85%;
+    }
+
+    .addToCartCardPhone>.d-flex>p{
+        margin-bottom: 0px;
+    }
+
+    .addToCartCardPhone>.d-flex>h4{
+        margin-bottom: 0;
+    }
+
+    .addToCartCardPhone>.d-flex>h4::before{
+        display: inline-block;
+        margin: 0 10px;
+        content: "$";
+        font-family: "Noto Serif TC";
+    }
+
+    .addToCartCardPhone>.d-flex>.calendar{
+        font-size: 14px;
+        
+    }
+
+    .addToCartBtn{
+        margin-top: 0px;
+    }
+
+    .wrapper-footer{
+        height: 102px;
+        margin: 0 auto -102px;
+    }
+}
