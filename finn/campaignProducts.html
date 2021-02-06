@@ -78,22 +78,43 @@
             <div class="categoryBtn  active">職人講座</div>
           </div>
         </div>
-
-        <div class="categoryRange">
+        <div class="categoryRange accordion " id="accordionExample">
           <form action="">
-            <label for="priceRangeMin">
-              <h5>價格篩選</h5>
-            </label>
-            <div class="w-100 d-flex justify-content-between">
-              <input type="number" id="priceRangeMin" name="priceRangeMin" placeholder="$" />
-              <p class="before"></p>
-              <input type="number" id="priceRangeMax" name="priceRangeMax" placeholder="$" />
+            <button class="btn btn-link categoryHeading" type="button" data-toggle="collapse" data-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <label for="priceRangeMin">
+                <h5>價格篩選</h5>
+              </label>
+            </button>
+            <div id="collapseOne" class="collapse show" aria-labelledby="categoryHeading"
+              data-parent="#accordionExample">
+              <div class="w-100 d-flex justify-content-between">
+                <input type="number" id="priceRangeMin" name="priceRangeMin" placeholder="$" />
+                <p class="before"></p>
+                <input type="number" id="priceRangeMax" name="priceRangeMax" placeholder="$" />
+              </div>
             </div>
           </form>
         </div>
       </div>
 
-      <div class="col-12 d-xl-none">
+      <div class="campaignCardBigPhone col-12 d-xl-none">
+
+        <div class="sortBarPhone dropdown d-flex justify-content-end">
+          <a class="sortBarPhoneBtn btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span>商品排序</span>
+          </a>
+
+          <div class="sortBarPhoneMenu dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="sortBarPhoneItem dropdown-item active" href="#">季節主打</a>
+            <a class="sortBarPhoneItem dropdown-item" href="#">熱門程度</a>
+            <a class="sortBarPhoneItem dropdown-item" href="#">用戶評價</a>
+            <a class="sortBarPhoneItem dropdown-item" href="#">價格：低到高</a>
+            <a class="sortBarPhoneItem dropdown-item" href="#">活動時間：最近</a>
+          </div>
+        </div>
+
         <div class="campaignCardBig w-100 d-xl-none">
           <div class="cardBigImg w-100 position-relative">
             <div class="heart position-absolute"><i class="fas fa-heart"></i></div>
@@ -266,7 +287,7 @@
         </div>
       </div>
 
-      <div class="col-xl-9 col-12 d-none d-sm-block">
+      <div class="campaignCardBigPC col-xl-9 col-12 d-none d-sm-block">
         <div class="sortBar">
           <ol class="sort">
             <li class="sortItem">

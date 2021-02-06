@@ -76,6 +76,18 @@ li.breadcrumb-item span {
   margin-bottom: 30px;
   color: #250404;
 }
+
+.categoryHeading{
+  padding: 0;
+  color: #250404;
+}
+.btn-link>h5{
+  color: #250404;
+}
+
+.btn-link:hover{
+  color: #250404;
+}
 .categoryTitle {
   font-weight: bold;
   margin-bottom: 20px;
@@ -326,6 +338,9 @@ li.breadcrumb-item span {
   .categoryGroup{
     margin-bottom: 15px;
   } 
+
+  
+
   
   .categoryBtn{
     background-color:rgba(199, 171, 142, 15%) ;
@@ -339,6 +354,63 @@ li.breadcrumb-item span {
  
   .categoryRange{
     margin-bottom: 15px;
+  }
+
+  .sortBarPhoneBtn{
+    color: #250404;
+    font-size: 12px;
+    font-family: "Noto Serif TC";
+    font-weight: bold;
+    background: none;
+    border: none;
+    margin-bottom: 5px;
+  }
+
+  .sortBarPhoneBtn:focus{
+    outline: none;
+    box-shadow: none;
+    background-color: #ffeed3;
+    border-radius: 0px;
+  }
+
+  .sortBarPhoneMenu{
+    transform: translate3d(179px, 33px, 0px) !important;
+    min-width: 166px;
+    padding: 0;
+    text-align: center;
+    border-radius: 0px;
+    border: 0px;
+    background-color: #ffeed3;
+    font-family: "Noto Noto TC";
+    font-size: 12px;
+    font-weight: lighter;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%) ; 
+  }
+
+  .dropdown-toggle::after{
+    color: #250404;
+
+  }
+
+  .sortBarPhoneItem{
+    padding: 8px ;
+    color: #250404;
+    letter-spacing: 0.2em;
+    font-weight: lighter;
+  }
+
+  .sortBarPhoneItem.active{
+    background-color: #cdaa8a;
+    border-radius: 0px;
+    color: #250404;
+    font-weight: bold;
+  }
+
+  .sortBarPhoneItem:focus{
+    background-color: #cdaa8a;
+    border-radius: 0px;
+    color: #250404;
+    font-weight: bold;
   }
 
   .cardBigImg{
