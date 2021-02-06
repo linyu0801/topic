@@ -17,10 +17,12 @@
     <title>Document</title>
 </head>
 
-<body>
-    <div class="container-fluid">
+<body data-spy="scroll" data-target="#list-example" data-offset="100" class="scrollspy-example">
+    <div class="container-fluid fixed-top">
         <nav class="navbar"></nav>
     </div>
+
+    <div class="wrapper-navbar"></div>
 
     <div class="container">
         <nav aria-label="breadcrumb">
@@ -33,6 +35,8 @@
             </ol>
         </nav>
     </div>
+
+
 
     <div class="container">
         <div class="row">
@@ -93,8 +97,7 @@
                 </div>
 
 
-                <div data-spy="scroll" data-target="#list-example" data-offset="0"
-                    class="porductContent scrollspy-example">
+                <div class="porductContent">
                     <h4 id="list-item-1">商品說明</h4>
                     <p>－ 行程特色
                         －<br /><br />・提供中、英文服務，讓你溝通無障礙<br />・可愛的冰棒及蛋糕讓您可自由DIY彩繪，同時還有美味手搖飲品可以享用，好吃又好玩！<br />・打卡還可免費得到迷你冰棒一支<br /><br /><br />－
@@ -105,7 +108,7 @@
                     </p>
                     <h4 id="list-item-2">行程介紹</h4>
 
-                    <h4 id=" list-item-3 ">購買須知</h4>
+                    <h4 id="list-item-3">購買須知</h4>
                     <p class="noticed">
                         ・每人低消50元，3歲以下可免費入場</p>
                     <h4 id="list-item-4">體驗地點</h4>
@@ -129,25 +132,27 @@
                 </div>
             </div>
             <div class="col-xl-4 ">
-                <div class="addToCartCard">
-                    <p>價格</p>
-                    <h5>$ 350</h5>
-                    <p class="calendar">
-                        <i class="far fa-calendar-check"></i> 2021-03-05
-                    </p>
-                    <button class="addToCartBtn">加入購物車</button>
-                </div>
-                <div id="list-example " class=" porductContentList list-group sticky-top">
-                    <a class="porductContentListItem list-group-item list-group-item-action active"
-                        href="#list-item-1">商品說明</a>
-                    <a class="porductContentListItem list-group-item list-group-item-action"
-                        href="#list-item-2">行程介紹</a>
-                    <a class="porductContentListItem list-group-item list-group-item-action"
-                        href="#list-item-3">購買須知</a>
-                    <a class="porductContentListItem list-group-item list-group-item-action"
-                        href="#list-item-4">體驗地點</a>
-                    <a class="porductContentListItem list-group-item list-group-item-action"
-                        href="#list-item-5">如何取消</a>
+                <div class="sticky-top">
+                    <div class="addToCartCard ">
+                        <p>價格</p>
+                        <h5>$ 350</h5>
+                        <p class="calendar">
+                            <i class="far fa-calendar-check"></i> 2021-03-05
+                        </p>
+                        <button class="addToCartBtn">加入購物車</button>
+                    </div>
+                    <div id="list-example" class=" porductContentList list-group">
+                        <a class="porductContentListItem list-group-item list-group-item-action"
+                            href="#list-item-1">商品說明</a>
+                        <a class="porductContentListItem list-group-item list-group-item-action"
+                            href="#list-item-2">行程介紹</a>
+                        <a class="porductContentListItem list-group-item list-group-item-action"
+                            href="#list-item-3">購買須知</a>
+                        <a class="porductContentListItem list-group-item list-group-item-action"
+                            href="#list-item-4">體驗地點</a>
+                        <a class="porductContentListItem list-group-item list-group-item-action"
+                            href="#list-item-5">如何取消</a>
+                    </div>
                 </div>
             </div>
         </div>

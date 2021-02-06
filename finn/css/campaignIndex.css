@@ -286,7 +286,7 @@ html,
 body {
   height: 100%;
 }
-.wrapper {
+.wrapper-footer {
   min-height: 100%;
   height: auto !important;
   height: 100%;
