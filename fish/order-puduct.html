@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="./css/font.css" />
 
     <style>
+      body {
+        overflow-x: hidden;
+      }
       .fish-aside ul {
         font-weight: 300;
         font-family: "Noto Sans TC";
@@ -51,8 +54,17 @@
         border-left: 6px solid #cdaa8a;
         margin: 20px 0 20px 0;
       }
-
+      .fish-aside-ul-active {
+        color: #cdaa8a;
+        font-weight: 300;
+        font-family: "Noto Sans TC";
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.1rem;
+        list-style: none;
+      }
       .fish-aside h4 {
+        white-space: nowrap;
         margin-bottom: 50px;
         color: #250404;
       }
@@ -153,6 +165,7 @@
       .fish-order h6 {
         display: block;
         text-align: center;
+        white-space: nowrap;
       }
       .fish-order-mt {
         margin: 50px 0px 100px 0px;
@@ -185,7 +198,10 @@
         line-height: 30px;
         /* padding: 0 14px; */
       }
-      @media screen and (max-width: 992px) {
+      .mob-order {
+        display: none;
+      }
+      @media screen and (max-width: 1200px) {
         .bgdown-img {
           display: none;
         }
@@ -194,10 +210,53 @@
           display: none;
         }
       }
-
+      @media screen and (max-width: 768px) {
+        h2 {
+          font-size: 36px;
+        }
+        .fish-order-pd {
+          padding: 20px 15px;
+        }
+        .desk-order {
+          display: none;
+        }
+        .mob-order {
+          display: block;
+          padding-bottom: 32px;
+        }
+        .mob-order h6 {
+          text-align: left;
+          /* padding-bottom: px; */
+        }
+        .mob-topic h6 {
+          text-align: right;
+        }
+      }
       @media screen and (max-width: 768px) {
         aside {
           display: none;
+        }
+      }
+      @media screen and (max-width: 414px) {
+        .fish-topic {
+          margin-bottom: 20px;
+        }
+        h2 {
+          font-size: 24px;
+        }
+      }
+      @media screen and (max-width: 413px) {
+        .fish-order-pd {
+          padding: 15px 0px;
+        }
+        .mob-order {
+          padding-bottom: 0px;
+        }
+        .fish-order {
+          border: none;
+        }
+        .mob-pd {
+          padding: 0 5px;
         }
       }
     </style>
@@ -273,33 +332,52 @@
         </div>
       </div>
       <div class="row justify-content-center">
-        <aside class="fish-aside col-2">
+        <aside class="fish-aside h-100 col-2">
           <h4>會員中心</h4>
-          <ul>
+          <ul data-toggle="collapse" data-target="#collapse-info">
             個人資訊
+            <ul id="collapse-info" class="collapse">
+              <a href="#">
+                <li>編輯個人資訊</li>
+              </a>
+              <a href="#">
+                <li class="fish-aside-">更改密碼</li>
+              </a>
+            </ul>
           </ul>
-          <ul>
+          <ul data-toggle="collapse" data-target="#collapse-fav">
             收藏清單
-          </ul>
-          <ul>
-            訂單資訊
 
-            <a href="#">
-              <li class="fish-aside-active">商品訂單</li>
-            </a>
-            <a href="#">
-              <li class="fish-aside">活動訂單</li>
-            </a>
-            <a href="#">
-              <li class="fish-aside">場地租借</li>
-            </a>
+            <ul id="collapse-fav" class="collapse">
+              <a href="#">
+                <li class="fish-aside">商品收藏</li>
+              </a>
+              <a href="#">
+                <li>活動收藏</li>
+              </a>
+            </ul>
+          </ul>
+          <ul data-toggle="collapse" data-target="#collapseorder">
+            <p class="fish-aside-ul-active">訂單資訊</p>
+
+            <ul id="collapseorder" class="collapse show">
+              <a href="#">
+                <li class="fish-aside-active">商品訂單</li>
+              </a>
+              <a href="#">
+                <li class="fish-aside">活動訂單</li>
+              </a>
+              <a href="#">
+                <li class="fish-aside">場地租借</li>
+              </a>
+            </ul>
           </ul>
         </aside>
-        <div class="col-9">
+        <div class="col-9 desk-order">
           <div
             class="w-100 fish-order fish-order-pd d-flex justify-content-between"
           >
-            <div class="col-2">
+            <div class="col-3">
               <h6>訂單編號</h6>
               <a href="#"> <h6 class="fish-order-text">123456</h6> </a>
               <a href="#"> <h6 class="fish-order-text">123456</h6> </a>
@@ -307,7 +385,7 @@
               <a href="#"> <h6 class="fish-order-text">123456</h6> </a>
               <a href="#"> <h6 class="fish-order-text">123456</h6> </a>
             </div>
-            <div class="col-2">
+            <div class="col-3">
               <h6>訂購日期</h6>
               <h6 class="fish-order-text">2020/12/15</h6>
               <h6 class="fish-order-text">2020/12/15</h6>
@@ -330,14 +408,6 @@
               <h6 class="fish-order-text">銀行轉帳</h6>
               <h6 class="fish-order-text">銀行轉帳</h6>
               <h6 class="fish-order-text">銀行轉帳</h6>
-            </div>
-            <div class="col-2">
-              <h6>配送方式</h6>
-              <h6 class="fish-order-text">門市自取</h6>
-              <h6 class="fish-order-text">宅配</h6>
-              <h6 class="fish-order-text">門市自取</h6>
-              <h6 class="fish-order-text">宅配</h6>
-              <h6 class="fish-order-text">宅配</h6>
             </div>
             <div class="col-2">
               <h6>訂單狀態</h6>
@@ -390,6 +460,140 @@
             </ul>
           </nav>
         </div>
+        <div class="col-8">
+          <div class="mob-order">
+            <div class="w-100 fish-order fish-order-pd d-flex">
+              <div class="col-6 mob-pd mob-topic">
+                <h6>訂單編號</h6>
+                <h6>訂購日期</h6>
+                <h6>訂單金額</h6>
+                <h6>付款方式</h6>
+                <h6>訂單狀態</h6>
+              </div>
+              <div class="col-6 mob-pd">
+                <a href="#"> <h6>123456</h6> </a>
+                <h6>2020/02/15</h6>
+                <h6>800</h6>
+                <h6>銀行轉帳</h6>
+                <h6>已送達</h6>
+              </div>
+            </div>
+          </div>
+          <div class="mob-order">
+            <div class="w-100 fish-order fish-order-pd d-flex">
+              <div class="col-6 mob-pd mob-topic">
+                <h6>訂單編號</h6>
+                <h6>訂購日期</h6>
+                <h6>訂單金額</h6>
+                <h6>付款方式</h6>
+                <h6>訂單狀態</h6>
+              </div>
+              <div class="col-6 mob-pd">
+                <a href="#"> <h6>123456</h6> </a>
+                <h6>2020/02/15</h6>
+                <h6>800</h6>
+                <h6>銀行轉帳</h6>
+                <h6>已送達</h6>
+              </div>
+            </div>
+          </div>
+          <div class="mob-order">
+            <div class="w-100 fish-order fish-order-pd d-flex">
+              <div class="col-6 mob-pd mob-topic">
+                <h6>訂單編號</h6>
+                <h6>訂購日期</h6>
+                <h6>訂單金額</h6>
+                <h6>付款方式</h6>
+                <h6>訂單狀態</h6>
+              </div>
+              <div class="col-6 mob-pd">
+                <a href="#"> <h6>123456</h6> </a>
+                <h6>2020/02/15</h6>
+                <h6>800</h6>
+                <h6>銀行轉帳</h6>
+                <h6>已送達</h6>
+              </div>
+            </div>
+          </div>
+          <div class="mob-order">
+            <div class="w-100 fish-order fish-order-pd d-flex">
+              <div class="col-6 mob-pd mob-topic">
+                <h6>訂單編號</h6>
+                <h6>訂購日期</h6>
+                <h6>訂單金額</h6>
+                <h6>付款方式</h6>
+                <h6>訂單狀態</h6>
+              </div>
+              <div class="col-6 mob-pd">
+                <a href="#"> <h6>123456</h6> </a>
+                <h6>2020/02/15</h6>
+                <h6>800</h6>
+                <h6>銀行轉帳</h6>
+                <h6>已送達</h6>
+              </div>
+            </div>
+          </div>
+          <div class="mob-order">
+            <div class="w-100 fish-order fish-order-pd d-flex">
+              <div class="col-6 mob-pd mob-topic">
+                <h6>訂單編號</h6>
+                <h6>訂購日期</h6>
+                <h6>訂單金額</h6>
+                <h6>付款方式</h6>
+                <h6>訂單狀態</h6>
+              </div>
+              <div class="col-6 mob-pd">
+                <a href="#"> <h6>123456</h6> </a>
+                <h6>2020/02/15</h6>
+                <h6>800</h6>
+                <h6>銀行轉帳</h6>
+                <h6>已送達</h6>
+              </div>
+            </div>
+          </div>
+
+          <nav aria-label="Page navigation example" class="fish-order-mt">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a
+                  class="page-link hoyu-page-link hoyu-page-arrow"
+                  href="#"
+                  aria-label="Previous"
+                >
+                  <span aria-hidden="true"
+                    ><i class="fas fa-chevron-left"></i
+                  ></span>
+                </a>
+              </li>
+              <li class="page-item">
+                <a class="page-link hoyu-page-link" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link hoyu-page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link hoyu-page-link" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link hoyu-page-link" href="#">4</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link hoyu-page-link" href="#">5</a>
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link hoyu-page-link hoyu-page-arrow"
+                  href="#"
+                  aria-label="Next"
+                >
+                  <span aria-hidden="true"
+                    ><i class="fas fa-chevron-right"></i
+                  ></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
     <div class="bgup-img"></div>
@@ -398,13 +602,13 @@
     <footer class="footer mt-auto py-3"></footer>
   </body>
   <script
-    src="https://code.jquery.com/jquery-3.5.1.js"
-    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"
   ></script>
   <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"
   ></script>
   <script></script>
