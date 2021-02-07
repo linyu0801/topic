@@ -50,9 +50,6 @@ h3.product-name{
 
 
 /*加入收藏元件*/
-.a-right-style{
-  text-align: right;  
-}
 
 .k-collection{
   font-size: 24px;
@@ -119,9 +116,10 @@ h3.product-name{
 }
 
 
-
-h5.product-description-inner{
-  padding: 45px auto;
+h5.product-description-text{
+  margin-bottom: 0;
+  padding: 76px 0;
+  color:#CDAA8A;
 }
 
 
@@ -129,10 +127,22 @@ h5.product-description-inner{
 
 /*temp-accordion 下拉式手風琴資訊*/
 
+.temp-accordion{
+  margin-top: 20px;
+}
+
+.temp-accordion>.fas, .plus-icon {
+  font-weight: 300;
+}
 
 .k-note{
   margin-bottom: 0;
   padding: 28px 0;
+}
+
+.info-body{
+  border-top: 1px solid #CDAA8A;
+  border-bottom: 1px solid #CDAA8A;
 }
 
 
