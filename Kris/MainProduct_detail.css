@@ -1,0 +1,143 @@
+.upper {
+  margin: 50px auto 25px;
+}
+.clbread {
+  font-size: 14px;
+  color: #cdaa8a;
+  font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 1.8px;
+  transition: 0.6s;
+}
+
+.clbread:hover {
+  color: #250404;
+  text-decoration: none;
+}
+
+.clspan {
+  color: #250404;
+}
+
+/*carousel 輪播圖*/
+.carousel-indicators{
+    position: static;
+}
+
+.p-carousel-box{
+  width: 552px;
+  height: 600px;
+}
+
+.p-carousel-box>img{
+  width: 100%;
+  height:auto;
+}
+
+.carousel-indicators > li.dot-bar {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 8px;
+  background-color: #cdaa8a;
+  }
+  
+
+/*col-lg-6 right-col 輪播圖右側文字區*/
+h3.product-name{
+  color: #C7AB8E;
+  margin-bottom: 0;
+}
+
+
+/*加入收藏元件*/
+.a-right-style{
+  text-align: right;  
+}
+
+.k-collection{
+  font-size: 24px;
+  line-height: 24px;
+  border: none;
+  color:#D67B76;
+}
+
+
+/*價格*/
+.product-price{
+  /* margin-top: 25px;
+  margin-bottom: 30px; */
+  margin: 25px auto 30px;
+
+}
+
+/*計數器 & 加入購物車按鈕*/
+.counter{
+  text-align: center;
+}
+
+.counter>.fas{
+  font-weight: 300;
+}
+
+.left-icon{
+  margin-right: 50px;
+}
+
+.right-icon{
+  margin-left: 50px;
+}
+
+
+/*加入購物車*/
+.shopping-zone{
+  margin-bottom: 45px;
+}
+
+.counter{
+  border-top: 1px solid #BEBEBE;
+  border-bottom: 1px solid #BEBEBE;
+
+}
+
+.k-style.addToCartBtn{
+  width: 100%;
+  border: none;
+  background-color: #cdaa8a;
+  padding: 15px;
+  color: #250404;
+  font-size: 14px;
+  font-family: "Noto Sans TC";
+  letter-spacing: 0.2em;
+  font-weight: lighter;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.k-style.addToCartBtn:hover{
+  background-color: #250404;
+  color: white;
+}
+
+
+
+h5.product-description-inner{
+  padding: 45px auto;
+}
+
+
+
+
+/*temp-accordion 下拉式手風琴資訊*/
+
+
+.k-note{
+  margin-bottom: 0;
+  padding: 28px 0;
+}
+
+
+/*temp-footer*/
+.temp-footer {
+  height: 387px;
+  background-color: #250404;
+}
