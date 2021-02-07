@@ -19,18 +19,18 @@
 }
 
 /*carousel 輪播圖*/
-.carousel-indicators{
-    position: static;
+.carousel-indicators {
+  position: static;
 }
 
-.p-carousel-box{
+.p-carousel-box {
   width: 552px;
   height: 600px;
 }
 
-.p-carousel-box>img{
+.p-carousel-box > img {
   width: 100%;
-  height:auto;
+  height: auto;
 }
 
 .carousel-indicators > li.dot-bar {
@@ -39,64 +39,58 @@
   border-radius: 50%;
   margin-right: 8px;
   background-color: #cdaa8a;
-  }
-  
+}
 
 /*col-lg-6 right-col 輪播圖右側文字區*/
-h3.product-name{
-  color: #C7AB8E;
+h3.product-name {
+  color: #c7ab8e;
   margin-bottom: 0;
 }
 
-
 /*加入收藏元件*/
 
-.k-collection{
+.k-collection {
   font-size: 24px;
   line-height: 24px;
   border: none;
-  color:#D67B76;
+  color: #d67b76;
 }
 
-
 /*價格*/
-.product-price{
+.product-price {
   /* margin-top: 25px;
   margin-bottom: 30px; */
   margin: 25px auto 30px;
-
 }
 
 /*計數器 & 加入購物車按鈕*/
-.counter{
+.counter {
   text-align: center;
 }
 
-.counter>.fas{
+.counter > .fas {
   font-weight: 300;
 }
 
-.left-icon{
+.left-icon {
   margin-right: 50px;
 }
 
-.right-icon{
+.right-icon {
   margin-left: 50px;
 }
 
-
 /*加入購物車*/
-.shopping-zone{
+.shopping-zone {
   margin-bottom: 45px;
 }
 
-.counter{
-  border-top: 1px solid #BEBEBE;
-  border-bottom: 1px solid #BEBEBE;
-
+.counter {
+  border-top: 1px solid #bebebe;
+  border-bottom: 1px solid #bebebe;
 }
 
-.k-style.addToCartBtn{
+.k-style.addToCartBtn {
   width: 100%;
   border: none;
   background-color: #cdaa8a;
@@ -110,40 +104,196 @@ h3.product-name{
   transition: 0.5s;
 }
 
-.k-style.addToCartBtn:hover{
+.k-style.addToCartBtn:hover {
   background-color: #250404;
   color: white;
 }
 
-
-h5.product-description-text{
+h5.product-description-text {
   margin-bottom: 0;
   padding: 76px 0;
-  color:#CDAA8A;
+  color: #cdaa8a;
 }
 
-
-
-
 /*temp-accordion 下拉式手風琴資訊*/
-
-.temp-accordion{
+/*info-head*/
+.temp-accordion {
   margin-top: 20px;
 }
 
-.temp-accordion>.fas, .plus-icon {
+.temp-accordion > .fas,
+.plus-icon {
   font-weight: 300;
 }
 
-.k-note{
+.k-note {
   margin-bottom: 0;
   padding: 28px 0;
 }
 
-.info-body{
-  border-top: 1px solid #CDAA8A;
-  border-bottom: 1px solid #CDAA8A;
+/*info-body*/
+.info-body {
+  padding: 45px 86px;
 }
+
+.info-body> .commons{
+  border-top: 1px solid #cdaa8a;
+  border-bottom: 1px solid #cdaa8a;
+  margin-bottom: 30px;
+}
+
+.info-body-text{
+  line-height: 30px;
+}
+
+.k-xd-icon {
+  margin-bottom: 50px;
+}
+
+.k-xd-icon > span {
+  padding: 32px;
+  border-radius: 50%;
+  background-color: #ffeed3;
+}
+
+.material-icons {
+  font-size: 36px;
+}
+
+h5.note {
+  padding: 0;
+  list-style: circle;
+  list-style-position: outside;
+}
+
+h5.note .note-list{
+  font-family: "Noto Serif TC";
+  font-size: 16px;
+  line-height: 30px;
+  text-indent: -32px;
+  letter-spacing: 0.1rem;
+}
+
+.note-list:before{
+  content: "";
+  display: inline-block;
+  margin-right:16px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #707070;
+}
+
+.member-common{
+  font-family: "Noto Serif TC";
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.1rem;
+  margin-bottom: 20px;
+}
+
+/*common form*/
+form .add-common{
+  font-weight: 600;
+}
+
+
+.pub-form small {
+  font-family: "Noto Serif TC";
+  color: #d67b76;
+  font-size: 12px;
+  display: block;
+  text-align: right;
+  height: 26px;
+  margin-top: 6px;
+}
+
+
+.pub-input {
+  font-family: "Noto Serif TC";
+  letter-spacing: 0.1rem;
+  line-height: 20px;
+  border: solid 1px #cdaa8a;
+  height: 46px;
+  padding-left: 15px;
+}
+
+
+.pub-form label {
+  font-family: "Noto Serif TC";
+  letter-spacing: 0.1rem;
+  line-height: 20px;
+  font-size: 16px;
+  color: #cdaa8a;
+}
+
+.pub-textarea{
+  font-family: "Noto Serif TC";
+  letter-spacing: 0.1rem;
+  line-height: 20px;
+  border: solid 1px #cdaa8a;
+  padding-left: 15px;
+  resize: none;
+  
+}
+
+.form-control.pub-textarea:focus, input:focus, .uneditable-input:focus {   
+  border-color: #FFF8EA;
+  box-shadow: 0 1px 1px rgba(255, 248, 234, 0.75) inset, 0 0 4px rgba(205,170,138, 0.9);
+  outline: 0 none;
+}
+
+
+
+.form-control.pub-textarea{
+  border-radius: 0px;
+}
+
+.k-pub-button {
+  border:none;
+  font-family: "Noto Sans TC";
+  letter-spacing: 0.1rem;
+  line-height: 20px;
+  background-color: #C7AB8E;
+  color: white;
+  text-align: center;
+  width: 260px;
+  height: 50px;
+  font-size: 14px;
+  display: block;
+  margin-top: 24px;
+}
+
+.k-pub-button:focus{
+  outline: none;
+}
+
+
+.pub-mb-100 {
+  margin-bottom: 100px;
+}
+
+
+/*之後要插入react owl carousel*/
+.more-info{
+  margin-top: 50px;
+  padding: 100px 0;
+  height: 692px;
+  background-color: #ffeed3;
+}
+
+.more{
+  color: #CDAA8A;
+}
+
+.more:after{
+content:">>";
+display: inline-block;
+
+
+}
+
+
 
 
 /*temp-footer*/
