@@ -17,118 +17,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/fish.css" />
 
-    <style>
-      .pub-form h6 {
-        color: white;
-        text-align: center;
-      }
-
-      .pub-form {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        width: 80%;
-      }
-      .pub-form a {
-        color: #cdaa8a;
-        display: block;
-        text-align: center;
-        font-size: 14px;
-        margin-top: 40px;
-        margin-bottom: 30px;
-      }
-
-      .pub-form a:hover {
-        text-decoration: none;
-      }
-      .pub-form small {
-        font-family: "Noto Serif TC";
-        color: #d67b76;
-        font-size: 12px;
-        display: block;
-        text-align: right;
-        height: 26px;
-        margin-top: 6px;
-      }
-      .pub-input {
-        font-family: "Noto Serif TC";
-        letter-spacing: 0.1rem;
-        line-height: 20px;
-        border: none;
-        height: 46px;
-        padding-left: 15px;
-        background: rgba(255, 255, 255, 0.3);
-      }
-      .pub-form label {
-        font-family: "Noto Serif TC";
-        letter-spacing: 0.1rem;
-        line-height: 20px;
-        font-size: 16px;
-        color: #cdaa8a;
-      }
-
-      .pub-button {
-        font-family: "Noto Sans TC";
-        letter-spacing: 0.1rem;
-        line-height: 20px;
-        background: #000;
-        color: white;
-        text-align: center;
-        width: 260px;
-        height: 50px;
-        font-size: 14px;
-        display: block;
-        margin-top: 24px;
-        border: none;
-      }
-
-      .pub-form h3 {
-        font-weight: 400;
-        color: #cdaa8a;
-        text-align: center;
-      }
-      .form-border {
-        border-bottom: #cdaa8a 1px solid;
-        margin: 12px 0px 36px 0px;
-      }
-      .forget-text {
-        margin: 32px auto;
-      }
-      footer {
-        width: 100%;
-        height: 388px;
-        background-color: #250404;
-      }
-      .fish-bg {
-        background: url("./imgs/forget.jpg") no-repeat center center;
-        background-size: cover;
-        background-color: rgba(0, 0, 0, 0.2);
-        background-blend-mode: multiply;
-      }
-      .fish-mask {
-        padding: 0px 0px 0px 0px;
-        margin-top: 100px;
-        background-color: rgba(255, 252, 248, 0.18);
-        border: 5px solid rgba(205, 170, 138, 0.3);
-        background-clip: padding-box;
-        margin-bottom: 100px;
-      }
-
-      @media screen and (max-width: 1200px) {
-        .fish-mask {
-          background-color: transparent;
-          border: none;
-        }
-      }
-      @media screen and (max-width: 414px) {
-        h3 {
-          font-size: 24px;
-        }
-      }
-    </style>
+    <style></style>
   </head>
   <body class="h-100">
-    <div class="fish-bg">
+    <div class="fish-forgetbg">
       <!-- <nav class="navbar navbar-expand-lg bg-dark">
         <button
           class="navbar-toggler"
@@ -186,7 +80,7 @@
           <div
             class="fish-mask d-flex justify-content-center col-xl-6 col-lg-8 col-md-10 col-sm-12"
           >
-            <form action="" class="pub-form">
+            <form action="" class="pub-form w-80">
               <h3>忘記密碼</h3>
               <div class="forget-text">
                 <h6>請輸入註冊時所使用的E-amil信箱地址，</h6>
@@ -194,7 +88,7 @@
               </div>
               <label for="account ">請輸入電子郵件</label><br />
               <input
-                class="w-100 pub-input"
+                class="w-100 member-input"
                 type="text"
                 name="acoount"
                 id="account"

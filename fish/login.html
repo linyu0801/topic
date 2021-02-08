@@ -17,140 +17,16 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/fish.css" />
 
     <style>
 
-.pub-form small {
-        font-family: "Noto Serif TC";
-        color: #d67b76;
-        font-size: 12px;
-        display: block;
-        text-align: right;
-        height: 26px;
-        margin-top: 6px;
-      }
-      .pub-input {
-        font-family: "Noto Serif TC";
-        letter-spacing: 0.1rem;
-        line-height: 20px;
-        border: none;
-        height: 46px;
-        padding-left: 15px;
-        background: rgba(255, 255, 255, 0.3);
-      }
-      .pub-form label {
-        font-family: "Noto Serif TC";
-        letter-spacing: 0.1rem;
-        line-height: 20px;
-        font-size: 16px;
-        color: #cdaa8a;
-      }
-
-      .pub-button {
-        font-family: "Noto Sans TC";
-        letter-spacing: 0.1rem;
-        line-height: 20px;
-        background: #000;
-        color: white;
-        text-align: center;
-        width: 260px;
-        height: 50px;
-        font-size: 14px;
-        display: block;
-        margin-top: 24px;
-        border: none;
-      }
-      .pub-form h3 {
-        font-weight: 400;
-        color: #cdaa8a;
-        text-align: center;
-        margin-bottom: 40px;
-      }
-      .pub-form {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        width: 80%;
-      }
-      .pub-form a {
-        color: #cdaa8a;
-        display: block;
-        text-align: center;
-        margin-top: 40px;
-        margin-bottom: 30px;
-      }
-
-      .pub-form a:hover {
-        text-decoration: none;
-      }
-   
-    
-      .form-border {
-        border-bottom: #cdaa8a 1px solid;
-        margin: 12px 0px 36px 0px;
-      }
-
-      footer {
-        width: 100%;
-        height: 388px;
-        background-color: #250404;
-      }
-      .fish-bg {
-        background: url("./imgs/login.jpg") no-repeat  ;
-        background-position:center  -170px ;
-        background-size: cover;
-        background-color: rgba(0, 0, 0, 0.2);
-        background-blend-mode: multiply;
-      }
-      .fish-mask {
-        padding: 0px 0px 0px 0px;
-        margin-top: 100px;
-        background-color: rgba(255, 252, 248, 0.18);
-        border: 5px solid rgba(205, 170, 138, 0.3);
-        background-clip: padding-box;
-        margin-bottom: 100px;
-      }
-      .fish-icons a {
-        margin: 0 auto;
-        padding: 0 0;
-      }
-      .fish-icons p {
-        color: #cdaa8a;
-        text-align: center;
-        margin-top: 18px;
-        margin-bottom: 0px;
-        white-space: nowrap;
-      }
-      .google {
-        background: url("./icons/google.svg") no-repeat center center;
-        width: 45px;
-        height: 40px;
-      }
-      .facebook {
-        background: url("./icons/facebook.svg") no-repeat center center;
-        width: 45px;
-        height: 40px;
-      }
-      .lock {
-        background: url("./icons/lock.svg") no-repeat center center;
-        width: 45px;
-        height: 40px;
-      }
-      @media screen and (max-width: 1200px) {
-        .fish-mask {
-          background-color: transparent;
-        border: none;
-        }
-      }
-      @media screen and (max-width: 414px) {
-        h3 {
-          font-size: 24px;
-        }
-      }
+  
     </style>
   </head>
   <body class="h-100">
-    <div class="fish-bg">
-     <!-- <nav class="navbar navbar-expand-lg bg-dark"> 
+    <div class="fish-loginbg">
+      <nav class="navbar navbar-expand-lg bg-dark"> 
         <button
           class="navbar-toggler"
           type="button"
@@ -201,17 +77,17 @@
             </li>
           </ul>
         </div>
-      </nav>  -->
+      </nav> 
       <div class="container h-100">
         <div class="row justify-content-center">
           <div
             class="fish-mask d-flex justify-content-center col-xl-6 col-lg-8 col-md-10 col-sm-12"
           >
-            <form action="" class="pub-form">
+            <form action="" class="pub-form w-80">
               <h3>會員登入</h3>
               <label for="account ">請輸入帳號</label><br />
               <input
-                class="w-100 pub-input"
+                class="w-100 member-input"
                 type="text"
                 name="acoount"
                 id="account"
@@ -220,7 +96,7 @@
 
               <label for="password">請輸入密碼</label><br />
               <input
-                class="w-100 pub-input"
+                class="w-100 member-input"
                 type="text"
                 name="password"
                 id="password"
@@ -242,18 +118,11 @@
                     <p>Facebook登入</p>
                   </div>
                 </a>
-                <!-- <a href="#" class="col-4">
-                  <div class="forgetpassword">
-                    <div class="lock mx-auto"></div>
-                    <p>忘記密碼</p>
-                  </div>
-                </a> -->
-
+         
                 <a href="#" class="col-4">
                 <div class="forgetpassword ">
                 <div class="lock mx-auto"></div>
                 <p>忘記密碼</p>
-              <!-- </div> -->
             </div>
               </a>
             </form>

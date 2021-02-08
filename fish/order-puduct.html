@@ -17,249 +17,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/font.css" />
-
-    <style>
-      body {
-        overflow-x: hidden;
-      }
-      .fish-aside ul {
-        font-weight: 300;
-        font-family: "Noto Sans TC";
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 0.1rem;
-        list-style: none;
-        padding-inline-start: 0px;
-        color: #250404;
-        padding-bottom: 15px;
-        margin-bottom: 0px;
-      }
-
-      .fish-aside li {
-        font-family: "Noto Sans TC";
-        font-size: 16px;
-        padding-left: 16px;
-        margin-top: 16px;
-        list-style: none;
-        color: #250404;
-      }
-      .fish-aside a :hover {
-        color: #cdaa8a;
-      }
-      .fish-aside ul > li:first-child {
-        margin-top: 30px;
-      }
-
-      .fish-aside-active {
-        border-left: 6px solid #cdaa8a;
-        margin: 20px 0 20px 0;
-      }
-      .fish-aside-ul-active {
-        color: #cdaa8a;
-        font-weight: 300;
-        font-family: "Noto Sans TC";
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 0.1rem;
-        list-style: none;
-      }
-      .fish-aside h4 {
-        white-space: nowrap;
-        margin-bottom: 50px;
-        color: #250404;
-      }
-
-      .fish-aside ul a:hover {
-        text-decoration: none;
-      }
-
-      .fish-topic {
-        color: #cdaa8a;
-        font-weight: 400;
-        margin-top: 10px;
-        margin-bottom: 50px;
-      }
-
-      .fish-topic i {
-        margin-right: 5px;
-      }
-
-      .pub-mb-100 {
-        margin-bottom: 100px;
-      }
-
-      .navbar-brand,
-      .nav-item a {
-        color: white;
-        margin-right: 60px;
-        font-size: 14px;
-      }
-
-      footer {
-        width: 100%;
-        height: 388px;
-        background-color: #250404;
-      }
-
-      input[type="date"]::-webkit-calendar-picker-indicator {
-        color: rgba(0, 0, 0, 0);
-        fill: #cdaa8a;
-        opacity: 1;
-        background-image: url("./icons/calendar.svg");
-        background-repeat: no-repeat;
-        background-position: 100% center;
-        background-size: 15px;
-        padding-right: 20px;
-        cursor: pointer;
-      }
-
-      .clbread {
-        font-size: 14px;
-        color: #cdaa8a;
-        font-family: "Noto Serif TC", serif;
-        letter-spacing: 1.8px;
-      }
-
-      .clbread:hover {
-        color: #250404;
-        text-decoration: none;
-      }
-
-      .clspan {
-        color: #250404;
-      }
-
-      .bread-div {
-        margin: 50px 0px;
-      }
-
-      .bgup-img::before {
-        content: " ";
-        background-image: url(./icons/goldbg.svg);
-        background-size: cover;
-        position: absolute;
-        right: 0px;
-        top: 50px;
-        width: 276px;
-        height: 276px;
-        transform: rotate(230deg);
-        pointer-events: none;
-      }
-
-      .bgdown-img::before {
-        content: " ";
-        background-image: url(./icons/goldbg.svg);
-        background-size: cover;
-        position: absolute;
-        left: -130px;
-        top: 530px;
-        width: 450px;
-        height: 450px;
-        transform: rotate(350deg);
-        pointer-events: none;
-      }
-
-      .fish-order {
-        border: 1px solid #cdaa8a;
-      }
-      .fish-order h6 {
-        display: block;
-        text-align: center;
-        white-space: nowrap;
-      }
-      .fish-order-mt {
-        margin: 50px 0px 100px 0px;
-      }
-      .fish-order-pd {
-        padding: 30px 30px;
-      }
-      .fish-order-pd a {
-        color: #cdaa8a;
-      }
-      .fish-order-text {
-        padding-top: 50px;
-      }
-      .hoyu-page-link {
-        border: none;
-        font-family: "Noto Serif TC";
-        color: #bebebe;
-        font-size: 24px;
-        /* padding: 0 8px; */
-      }
-
-      .hoyu-page-link:hover {
-        color: #cdaa8a;
-        background: none;
-        border: none;
-      }
-
-      .hoyu-page-arrow {
-        font-size: 12px;
-        line-height: 30px;
-        /* padding: 0 14px; */
-      }
-      .mob-order {
-        display: none;
-      }
-      @media screen and (max-width: 1200px) {
-        .bgdown-img {
-          display: none;
-        }
-
-        .bgup-img {
-          display: none;
-        }
-      }
-      @media screen and (max-width: 768px) {
-        h2 {
-          font-size: 36px;
-        }
-        .fish-order-pd {
-          padding: 20px 15px;
-        }
-        .desk-order {
-          display: none;
-        }
-        .mob-order {
-          display: block;
-          padding-bottom: 32px;
-        }
-        .mob-order h6 {
-          text-align: left;
-          /* padding-bottom: px; */
-        }
-        .mob-topic h6 {
-          text-align: right;
-        }
-      }
-      @media screen and (max-width: 768px) {
-        aside {
-          display: none;
-        }
-      }
-      @media screen and (max-width: 414px) {
-        .fish-topic {
-          margin-bottom: 20px;
-        }
-        h2 {
-          font-size: 24px;
-        }
-      }
-      @media screen and (max-width: 413px) {
-        .fish-order-pd {
-          padding: 15px 0px;
-        }
-        .mob-order {
-          padding-bottom: 0px;
-        }
-        .fish-order {
-          border: none;
-        }
-        .mob-pd {
-          padding: 0 5px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./css/fish.css" />
   </head>
 
   <body class="h-100">
@@ -460,8 +218,8 @@
             </ul>
           </nav>
         </div>
-        <div class="col-8">
-          <div class="mob-order">
+        <div class="col-8 mob-order">
+          <div class="mob-order-pd">
             <div class="w-100 fish-order fish-order-pd d-flex">
               <div class="col-6 mob-pd mob-topic">
                 <h6>訂單編號</h6>
@@ -479,7 +237,7 @@
               </div>
             </div>
           </div>
-          <div class="mob-order">
+          <div class="mob-order-pd">
             <div class="w-100 fish-order fish-order-pd d-flex">
               <div class="col-6 mob-pd mob-topic">
                 <h6>訂單編號</h6>
@@ -497,7 +255,7 @@
               </div>
             </div>
           </div>
-          <div class="mob-order">
+          <div class="mob-order-pd">
             <div class="w-100 fish-order fish-order-pd d-flex">
               <div class="col-6 mob-pd mob-topic">
                 <h6>訂單編號</h6>
@@ -515,7 +273,7 @@
               </div>
             </div>
           </div>
-          <div class="mob-order">
+          <div class="mob-order-pd">
             <div class="w-100 fish-order fish-order-pd d-flex">
               <div class="col-6 mob-pd mob-topic">
                 <h6>訂單編號</h6>
@@ -533,7 +291,7 @@
               </div>
             </div>
           </div>
-          <div class="mob-order">
+          <div class="mob-order-pd">
             <div class="w-100 fish-order fish-order-pd d-flex">
               <div class="col-6 mob-pd mob-topic">
                 <h6>訂單編號</h6>
