@@ -1,451 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>studioRent</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./public-component/pagination_hoyu.css">
-  <style>
-    .clsection {
-      height: 800px;
-      width: 100%;
-      background-image: url(./2/class2-4.jpeg);
-      background-size: cover;
-      border-radius: 0;
-      opacity: 0.7;
-      background-position: center center;
-    }
-
-    .clslogan {
-      position: relative;
-    }
-
-    .clheromsg {
-      position: absolute;
-
-      font-size: 48px;
-      margin-top: 150px;
-      background: linear-gradient(to right, #250404, #c7ab8e);
-      opacity: 0.8;
-    }
-
-    .cl-searchbtn {
-      border-radius: 0;
-      color: white;
-      background-color: hsl(29, 40%, 67%);
-      border-color: #cdaa8a;
-      font-family: "Noto Serif TC", serif;
-      font-size: 12px;
-      width: 20%;
-      height: 60px;
-      margin-top: 250px;
-    }
-
-    .clsearchbar {
-      border-style: none;
-      color: #1a1e23;
-      font-size: 14px;
-      font-family: "Noto Serif TC", serif;
-      height: 60px;
-      border-radius: 0;
-      margin-top: 250px;
-      width: 40%;
-      padding-left: 15px;
-    }
-
-    .clbread {
-      font-size: 14px;
-      color: #cdaa8a;
-      font-family: "Noto Sans TC";
-      letter-spacing: 1.8px;
-      text-decoration: none;
-      padding: 0px;
-    }
-
-    .clspan {
-      color: #250404;
-    }
-
-    .clbread:hover {
-      color: #250404;
-    }
-
-    .breadbox {
-      height: 50px;
-      margin-top: 20px;
-    }
-
-    h1 {
-      font-size: 76px;
-      font-family: "Noto Serif TC";
-    }
-
-    h2 {
-      font-size: 48px;
-      color: #cdaa8a;
-      font-family: "Noto Serif TC";
-      font-weight: bold;
-      letter-spacing: 0.1rem;
-    }
-
-    h3 {
-      font-size: 36px;
-      color: #250404;
-      font-family: "Noto Serif TC";
-      font-weight: bold;
-      letter-spacing: 0.1rem;
-    }
-
-    h4 {
-      font-size: 24px;
-      font-family: "Noto Serif TC";
-      letter-spacing: 0.1rem;
-      line-height: 20px;
-    }
-
-    h5 {
-      font-family: "Noto Serif TC";
-      font-size: 16px;
-      letter-spacing: 0.1rem;
-      margin-bottom: 0px;
-      font-weight: bold;
-    }
-
-    p {
-      font-family: "Noto Serif TC";
-      font-size: 14px;
-      color: #250404;
-      line-height: 20px;
-      letter-spacing: 0.1rem;
-    }
-
-    a {
-      font-family: "Noto Sans TC";
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: 0.1rem;
-    }
-
-    .stars {
-      font-size: 14px;
-      color: #cdaa8a;
-      letter-spacing: 1px;
-    }
-
-    .price {
-      font-size: 16px;
-      font-family: "Noto Serif TC";
-      color: #250404;
-      letter-spacing: 3px;
-      font-weight: bold;
-      border-left: 5px solid #cdaa8a;
-      padding-left: 12px;
-      text-align: right;
-    }
-
-    .campaignCardBig {
-      height: 380px;
-      /* width: 1189.54px; */
-      background-color: #ffeed3;
-      margin-bottom: 30px;
-      transition-duration: 0.5s;
-      cursor: pointer;
-    }
-
-    .campaignCardBig:hover {
-      box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
-      transition-duration: 0.5s;
-    }
-
-    .cardBigImg1 {
-      background-image: url("./1/class1-1.jpg");
-      width: 40%;
-      background-size: cover;
-      overflow: hidden;
-      background-position: center center;
-    }
-
-    .cardBigImg2 {
-      background-image: url("./2/class2-1.jpeg");
-      width: 40%;
-      background-size: cover;
-      overflow: hidden;
-      background-position: center center;
-    }
-
-    .cardBigImg3 {
-      background-image: url("./3/class3-3.jpg");
-      width: 40%;
-      background-size: cover;
-      overflow: hidden;
-      background-position: center center;
-    }
-
-
-    .cardBigText {
-      width: 60%;
-      padding: 30px;
-    }
-
-    .cardBigTag {
-      width: 70px;
-      height: 20px;
-      background-color: #d67b76;
-      margin-bottom: 10px;
-      font-family: "Noto Sans TC";
-      font-size: 10px;
-      text-align: center;
-      color: white;
-      font-weight: lighter;
-      letter-spacing: 0.075rem;
-    }
-
-    .cardBigText {
-      position: relative;
-    }
-
-    .cardBigText>p {
-      font-family: "Noto Serif TC";
-      color: #250404;
-      font-size: 12px;
-      letter-spacing: 0.075rem;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      margin-bottom: 15px;
-    }
-
-    .cardBigText>.location {
-      margin-bottom: 8px;
-      font-family: "Noto Sans TC";
-      font-weight: lighter;
-      letter-spacing: 0.15rem;
-    }
-
-    .studioClass {
-      margin-left: 120px;
-      margin-bottom: 10px;
-      margin-top: 20px;
-    }
-
-    .rightLine {
-      margin-top: 40px;
-    }
-
-    .claddCart {
-      position: absolute;
-      width: 261px;
-      height: 50px;
-      background-color: #cdaa8a;
-      right: 30px;
-      bottom: 30px;
-      color: white;
-      border-radius: 0;
-    }
-
-    .studioIntro {
-      margin-top: 150px;
-    }
-
-    .clfooter {
-      margin-top: 150px;
-      height: 200px;
-      background-color: #250404;
-    }
-
-    @media (max-width: 415px),
-    print {
-      .studioClass {
-        font-size: 24px;
-        font-family: sans-serif;
-        width: 100%;
-        margin-top: 60px;
-
-      }
-    }
-
-    @media (max-width: 415px),
-    print {
-      .rightLine {
-        display: none;
-      }
-    }
-
-    @media (max-width: 415px),
-    print {
-      .claddCart {
-        width: 390px;
-        right: 0;
-        bottom: -50px;
-      }
-    }
-
-    @media (max-width: 415px),
-    print {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>studioRent</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./public-component/pagination_hoyu.css" />
+    <style>
       .clsection {
-        height: 450px;
+        height: 800px;
+        width: 100%;
+        background-image: url(./2/class2-4.jpeg);
+        background-size: cover;
+        border-radius: 0;
+        opacity: 0.7;
+        background-position: center center;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      .clslogan {
+        position: relative;
+      }
+
+      .clheromsg {
+        position: absolute;
+
+        font-size: 48px;
+        margin-top: 150px;
+        background: linear-gradient(to right, #250404, #c7ab8e);
+        opacity: 0.8;
+      }
+
+      .cl-searchbtn {
+        border-radius: 0;
+        color: white;
+        background-color: hsl(29, 40%, 67%);
+        border-color: #cdaa8a;
+        font-family: "Noto Serif TC", serif;
+        font-size: 12px;
+        width: 20%;
+        height: 60px;
+        margin-top: 250px;
+      }
+
+      .clsearchbar {
+        border-style: none;
+        color: #1a1e23;
+        font-size: 14px;
+        font-family: "Noto Serif TC", serif;
+        height: 60px;
+        border-radius: 0;
+        margin-top: 250px;
+        width: 40%;
+        padding-left: 15px;
+      }
+
+      .clbread {
+        font-size: 14px;
+        color: #cdaa8a;
+        font-family: "Noto Sans TC";
+        letter-spacing: 1.8px;
+        text-decoration: none;
+        padding: 0px;
+      }
+
+      .clspan {
+        color: #250404;
+      }
+
+      .clbread:hover {
+        color: #250404;
+      }
+
+      .breadbox {
+        height: 50px;
+        margin-top: 20px;
+      }
+
+      h1 {
+        font-size: 76px;
+        font-family: "Noto Serif TC";
+      }
+
+      h2 {
+        font-size: 48px;
+        color: #cdaa8a;
+        font-family: "Noto Serif TC";
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+      }
+
+      h3 {
+        font-size: 36px;
+        color: #250404;
+        font-family: "Noto Serif TC";
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+      }
+
+      h4 {
+        font-size: 24px;
+        font-family: "Noto Serif TC";
+        letter-spacing: 0.1rem;
+        line-height: 20px;
+      }
+
+      h5 {
+        font-family: "Noto Serif TC";
+        font-size: 16px;
+        letter-spacing: 0.1rem;
+        margin-bottom: 0px;
+        font-weight: bold;
+      }
+
+      p {
+        font-family: "Noto Serif TC";
+        font-size: 14px;
+        color: #250404;
+        line-height: 20px;
+        letter-spacing: 0.1rem;
+      }
+
+      a {
+        font-family: "Noto Sans TC";
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1rem;
+      }
+
+      .stars {
+        font-size: 14px;
+        color: #cdaa8a;
+        letter-spacing: 1px;
+      }
+
+      .price {
+        font-size: 16px;
+        font-family: "Noto Serif TC";
+        color: #250404;
+        letter-spacing: 3px;
+        font-weight: bold;
+        border-left: 5px solid #cdaa8a;
+        padding-left: 12px;
+        text-align: right;
+      }
+
+      .cardBig {
+        height: 380px;
+        /* width: 1189.54px; */
+        background-color: #ffeed3;
+        margin-bottom: 30px;
+        transition-duration: 0.5s;
+        cursor: pointer;
+      }
+
+      .cardBig:hover {
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+        transition-duration: 0.5s;
+      }
+
+      .cardBigImg1 {
+        background-image: url("./1/class1-1.jpg");
+        width: 40%;
+        background-size: cover;
+        overflow: hidden;
+        background-position: center center;
+      }
+
+      .cardBigImg2 {
+        background-image: url("./2/class2-1.jpeg");
+        width: 40%;
+        background-size: cover;
+        overflow: hidden;
+        background-position: center center;
+      }
+
+      .cardBigImg3 {
+        background-image: url("./3/class3-3.jpg");
+        width: 40%;
+        background-size: cover;
+        overflow: hidden;
+        background-position: center center;
+      }
+
+      .clcardText {
+        width: 60%;
+        padding: 30px;
+      }
+
+      .cardBigTag {
+        width: 70px;
+        height: 20px;
+        background-color: #d67b76;
+        margin-bottom: 10px;
+        font-family: "Noto Sans TC";
+        font-size: 10px;
+        text-align: center;
+        color: white;
+        font-weight: lighter;
+        letter-spacing: 0.075rem;
+      }
+
+      .clcardText {
+        position: relative;
+      }
+
+      .clcardText > p {
+        font-family: "Noto Serif TC";
+        color: #250404;
+        font-size: 12px;
+        letter-spacing: 0.075rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 15px;
+      }
+
+      .clcardText > .location {
+        margin-bottom: 8px;
+        font-family: "Noto Sans TC";
+        font-weight: lighter;
+        letter-spacing: 0.15rem;
+      }
+
+      .studioClass {
+        margin-left: 120px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+      }
+
+      .rightLine {
+        margin-top: 40px;
+      }
+
+      .claddCart {
+        position: absolute;
+        width: 261px;
+        height: 50px;
+        background-color: #cdaa8a;
+        right: 30px;
+        bottom: 30px;
+        color: white;
+        border-radius: 0;
+      }
+
+      .studioIntro {
+        margin-top: 150px;
+      }
+
+      .clfooter {
+        margin-top: 150px;
+        height: 200px;
+        background-color: #250404;
+      }
+
+      @media (max-width: 415px), print {
+        .studioClass {
+          font-size: 24px;
+          font-family: sans-serif;
+          width: 100%;
+          margin-top: 60px;
+        }
+      }
+
+      @media (max-width: 415px), print {
+        .rightLine {
+          display: none;
+        }
+      }
+
+      @media (max-width: 415px), print {
+        .claddCart {
+          width: 390px;
+          right: 0;
+          bottom: -50px;
+        }
+      }
+
+      @media (max-width: 415px), print {
+        .clsection {
+          height: 450px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="clsection jumbotron text-white col-lg-12 col-md-6 col-sm-4 container-fluid"
+    >
+      <div class="clslogan jumbotron d-flex justify-content-center">
+        <h2 class="clheromsg">現在動手做</h2>
+      </div>
+
+      <div class="container justify-content-center">
+        <div class="row col-lg-8 col-sm-12 mx-auto">
+          <form class="d-flex justify-content-center">
+            <input class="clsearchbar" type="date" placeholder="日期:" />
+            <input
+              class="clsearchbar"
+              type="number"
+              min="1"
+              placeholder="人數:"
+            />
+            <button
+              class="cl-searchbtn btn search-btn-outline-success"
+              type="submit"
+            >
+              <i class="fas fa-search"></i> <span> </span>搜尋
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
+      <div class="breadbox col-lg-12 col-sm-12">
+        <a class="clbread" href="">首頁 <span class="clspan">></span></a>
+        <a class="clbread" href=""> 教室租借 </a>
       </div>
     </div>
-  </nav>
-
-  <div class="clsection jumbotron text-white col-lg-12 col-md-6 col-sm-4 container-fluid">
-    <div class="clslogan jumbotron d-flex justify-content-center">
-      <h2 class="clheromsg">現在動手做</h2>
-    </div>
-
-    <div class="container justify-content-center">
-      <div class="row col-lg-8 col-sm-12 mx-auto">
-        <form class="d-flex justify-content-center">
-          <input class="clsearchbar" type="date" placeholder="日期:" />
-          <input class="clsearchbar" type="number" min="1" placeholder="人數:" />
-          <button class="cl-searchbtn btn search-btn-outline-success" type="submit">
-            <i class="fas fa-search"></i> <span> </span>搜尋
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="breadbox col-lg-12 col-sm-12">
-      <a class="clbread" href="">首頁 <span class="clspan">></span></a>
-      <a class="clbread" href=""> 教室租借 </a>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-5">
-        <h2 class="studioClass">大安館教室</h2>
-      </div>
-      <div class="col-7">
-        <hr class="rightLine w-50" />
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="col-lg-12 col-md-6 col-sm-4">
-      <div class="campaignCardBig d-flex w-100">
-        <div class="cardBigImg1"></div>
-        <div class="cardBigText">
-          <p class="studioIntro">
-            無經驗新手也能輕鬆做出甜點！Funsiamo 玩美烘焙體驗，透過 iPad
-            數位教學，搭配現場服務人員的親切協助，每個走進店裡的人都能帶走精美
-          </p>
-          <button class="btn claddCart">加入購物車</button>
+    <div class="container">
+      <div class="row">
+        <div class="col-5">
+          <h2 class="studioClass">大安館教室</h2>
+        </div>
+        <div class="col-7">
+          <hr class="rightLine w-50" />
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-5">
-        <h2 class="studioClass">東門館教室</h2>
-      </div>
-      <div class="col-7">
-        <hr class="rightLine w-50" />
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="col-lg-12 col-md-6 col-sm-4">
-      <div class="campaignCardBig d-flex w-100">
-        <div class="cardBigImg2"></div>
-        <div class="cardBigText">
-          <p class="studioIntro">
-            無經驗新手也能輕鬆做出甜點！Funsiamo 玩美烘焙體驗，透過 iPad
-            數位教學，搭配現場服務人員的親切協助，每個走進店裡的人都能帶走精美
-          </p>
-          <button class="btn claddCart">加入購物車</button>
+    <div class="container">
+      <div class="col-lg-12 col-md-6 col-sm-4">
+        <div class="cardBig d-flex w-100">
+          <div class="cardBigImg1"></div>
+          <div class="clcardText">
+            <p class="studioIntro">
+              無經驗新手也能輕鬆做出甜點！Funsiamo 玩美烘焙體驗，透過 iPad
+              數位教學，搭配現場服務人員的親切協助，每個走進店裡的人都能帶走精美
+            </p>
+            <button class="btn claddCart">加入購物車</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-5">
-        <h2 class="studioClass">西門館教室</h2>
-      </div>
-      <div class="col-7">
-        <hr class="rightLine w-50" />
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="col-lg-12 col-md-6 col-sm-4">
-      <div class="campaignCardBig d-flex w-100">
-        <div class="cardBigImg3"></div>
-        <div class="cardBigText">
-          <p class="studioIntro">
-            無經驗新手也能輕鬆做出甜點！Funsiamo 玩美烘焙體驗，透過 iPad
-            數位教學，搭配現場服務人員的親切協助，每個走進店裡的人都能帶走精美
-          </p>
-          <button class="btn claddCart">加入購物車</button>
+    <div class="container">
+      <div class="row">
+        <div class="col-5">
+          <h2 class="studioClass">東門館教室</h2>
+        </div>
+        <div class="col-7">
+          <hr class="rightLine w-50" />
         </div>
       </div>
     </div>
-  </div>
 
+    <div class="container">
+      <div class="col-lg-12 col-md-6 col-sm-4">
+        <div class="cardBig d-flex w-100">
+          <div class="cardBigImg2"></div>
+          <div class="clcardText">
+            <p class="studioIntro">
+              無經驗新手也能輕鬆做出甜點！Funsiamo 玩美烘焙體驗，透過 iPad
+              數位教學，搭配現場服務人員的親切協助，每個走進店裡的人都能帶走精美
+            </p>
+            <button class="btn claddCart">加入購物車</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-5">
+          <h2 class="studioClass">西門館教室</h2>
+        </div>
+        <div class="col-7">
+          <hr class="rightLine w-50" />
+        </div>
+      </div>
+    </div>
 
-  <footer class="clfooter">FOOTER</footer>
+    <div class="container">
+      <div class="col-lg-12 col-md-6 col-sm-4">
+        <div class="cardBig d-flex w-100">
+          <div class="cardBigImg3"></div>
+          <div class="clcardText">
+            <p class="studioIntro">
+              無經驗新手也能輕鬆做出甜點！Funsiamo 玩美烘焙體驗，透過 iPad
+              數位教學，搭配現場服務人員的親切協助，每個走進店裡的人都能帶走精美
+            </p>
+            <button class="btn claddCart">加入購物車</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <footer class="clfooter">FOOTER</footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

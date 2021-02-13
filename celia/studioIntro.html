@@ -70,8 +70,8 @@
     }
 
 
-    .carousel-control-prev,
-    .carousel-control-next {
+    .cldirection-prev,
+    .cldirection-next {
       position: absolute;
       width: 67px;
       height: 67px;
@@ -82,8 +82,8 @@
 
     }
 
-    .carousel-control-prev:hover,
-    .carousel-control-next:hover {
+    .cldirection-prev:hover,
+    .cldirection-next:hover {
       opacity: 0.5;
       transition: opacity .2s ease;
     }
@@ -110,7 +110,7 @@
       color: #250404;
     }
 
-    .breadbox {
+    .clbreadbox {
       height: 50px;
       margin-top: 20px;
     }
@@ -129,25 +129,25 @@
 
     }
 
-    .pub-form {
+    .clpub-form {
       border: solid 2px #cdaa8a;
       margin: 0px 15px;
 
     }
 
-    .clpub-form {
+    .clclpub-form {
       border: solid 2px #cdaa8a;
       margin: 0px 15px;
       background-color: #FFF8EA;
       list-style-type: none
     }
 
-    .pub-form:hover {
+    .clpub-form:hover {
       box-shadow: 0 6px 6px 0 rgba(0, 0, 0, .2);
       transition: all .2s ease-in-out;
     }
 
-    .clpub-form:hover {
+    .clclpub-form:hover {
       box-shadow: 0 6px 6px 0 rgba(0, 0, 0, .2);
       transition: all .2s ease-in-out;
     }
@@ -172,7 +172,7 @@
 
     }
 
-    .pub-form label,
+    .clpub-form label,
     input,
     button,
     small {
@@ -181,11 +181,11 @@
       font-weight: 300;
     }
 
-    .fa-exclamation-triangle {
+    .clfa-exclamation-triangle {
       color: #d67b76;
     }
 
-    .pub-form small {
+    .clpub-form small {
       color: #d67b76;
       font-size: 10px;
       display: block;
@@ -194,20 +194,20 @@
       margin-top: 4px;
     }
 
-    .pub-input {
+    .clpub-input {
       border: solid 1px #cdaa8a;
       height: 46px;
       padding-left: 15px;
     }
 
-    .pub-form label {
+    .clpub-form label {
       font-size: 16px;
       color: #250404;
 
     }
 
 
-    .pub-button {
+    .clbutton {
       background: #000;
       color: white;
       text-align: center;
@@ -218,7 +218,7 @@
       margin-top: 80px;
     }
 
-    .pub-mb-100 {
+    .clbutton {
       margin-bottom: 100px;
     }
 
@@ -248,7 +248,7 @@
       margin: 20px 0;
     }
 
-    .introForm {
+    .clintroForm {
       display: flex;
       justify-content: center;
     }
@@ -262,21 +262,21 @@
         font-size: 24px;
       }
 
-      .carousel-control-prev,
-      .carousel-control-next {
+      .cldirection-prev,
+      .cldirection-next {
         display: none;
 
 
 
       }
 
-      .introForm {
+      .clintroForm {
         display: initial;
 
 
       }
 
-      .pub-form {
+      .clpub-form {
         margin-bottom: 20px;
       }
 
@@ -420,7 +420,7 @@
   </nav>
 
   <div class="container">
-    <div class="breadbox col-lg-12 col-sm-12">
+    <div class="clbreadbox col-lg-12 col-sm-12">
       <a class="clbread" href="">首頁 <span class="clspan">></span></a>
       <a class="clbread" href=""> 教室租借 </a>
     </div>
@@ -445,7 +445,7 @@
         </div>
       </div>
     </div>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <a class=" cldirection-next carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
       <svg xmlns="http://www.w3.org/2000/svg" width="13.41" height="19.929" viewBox="0 0 13.41 19.929">
         <g id="Group_89" data-name="Group 89" transform="translate(-1056.6 -2864.328)">
           <path id="Path_20" data-name="Path 20" d="M4250.567,2996.582s2.47,9.421,12.443,9.421"
@@ -456,7 +456,7 @@
       </svg>
 
     </a>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"><svg
+    <a class=" cldirection-prev  cldirection-prev carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"><svg
         xmlns="http://www.w3.org/2000/svg" width="13.41" height="19.929" viewBox="0 0 13.41 19.929">
         <g id="Group_89" data-name="Group 89" transform="translate(0 0.254)">
           <path id="Path_20" data-name="Path 20" d="M4263.009,2996.582s-2.47,9.421-12.443,9.421"
@@ -485,19 +485,19 @@
     <div class="container  h-100">
       <div class="row ">
         <div class="col-12">
-          <div class="w-100 introForm">
-            <form action="" class="pub-form col-lg-6 col-12">
+          <div class="w-100 clintroForm">
+            <form action="" class="clpub-form col-lg-6 col-12">
               <h2 class="IntroTitle">教室預約 <i class="fas fa-wine-glass-alt"></i></h2>
               <div class="clborder">
                 <label for="date">日期</label><br />
-                <input class="w-100 pub-input" type="text" name="acoount" id="account" /><br />
+                <input class="w-100 clpub-input" type="text" name="acoount" id="account" /><br />
                 <small></small>
                 <label for="number">人數</label><br />
-                <input class="w-100 pub-input" type="text" name="password" id="password" />
+                <input class="w-100 clpub-input" type="text" name="password" id="password" />
                 <small>最多限定20人</small>
 
                 <label for="timerange">時段</label><br />
-                <input class="w-100 pub-input" type="text" name="tel" id="tel" />
+                <input class="w-100 clpub-input" type="text" name="tel" id="tel" />
                 <div class="orderWrap ">
                   <ul class=" orderDate d-flex justify-content-between">
                     <li class="clcount">日期:</li>
@@ -521,13 +521,13 @@
                   </ul>
                 </div>
 
-                <button type="submit" class="pub-button pub-mb-100 mx-auto">
+                <button type="submit" class="clbutton pub-button pub-mb-100 mx-auto">
                   預定
                 </button>
               </div>
             </form>
 
-            <form action="" class="clpub-form col-lg-6 col-12 ">
+            <form action="" class="clclpub-form col-lg-6 col-12 ">
               <h2 class="IntroTitle">教室介紹</h2>
               <h3 class="IntroTitleSmall">配備/費用</h3>
               <ul class="equimentfee">
@@ -546,14 +546,14 @@
               </ul>
               <h3 class="IntroTitleSmall">注意事項</h3>
               <div class="wrapatention">
-                <ul class="clatention"> <i class="fas fa-exclamation-triangle"></i>
+                <ul class="clatention"> <i class="fas clfa-exclamation-triangle"></i>
                   <li class="atention">
                     借用收費以單位時段三小時為計算單位，借用未足一單位時段者，以一單位時段計算。
                   </li>
-                  <i class="fas fa-exclamation-triangle"></i>
+                  <i class=" fas clfa-exclamation-triangle"></i>
                   <li class="atention">與教室確認登記租借日期及時段後，需先預付租借總費用 1/2
                     的金額以作訂金（繳費匯款方式在與教</li>
-                  <i class="fas fa-exclamation-triangle"></i>
+                  <i class="fas clfa-exclamation-triangle"></i>
                   <li class="atention">當天活動開始前繳付押金3000
                     元予教室現場工作人員，待歸還檢查無誤後方可全額退還。</li>
 
