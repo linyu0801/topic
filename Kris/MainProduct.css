@@ -1,5 +1,3 @@
-
-
 ul {
   list-style: none;
   padding: 0;
@@ -213,12 +211,12 @@ ul {
 }
 
 /*golden ball*/
-.k-golden-design::before {
+.k-golden-design {
   position: absolute;
   bottom: -40px;
   left: -200px;
   content: "";
-  background: url(/images/goldenball.svg);
+  background: url(../celia/img/goldenRing.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 276px;
