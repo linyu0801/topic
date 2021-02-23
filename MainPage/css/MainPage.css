@@ -199,7 +199,9 @@ a {
   height: 300px;
   margin: auto;
 }
-
+.trrow {
+  margin-right: 0;
+}
 .trytast {
   margin-top: 150px;
   width: 100%;
