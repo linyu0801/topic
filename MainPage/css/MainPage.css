@@ -150,6 +150,7 @@ a {
   border: #cdaa8a 8px double;
   padding-left: 194px;
   padding-top: 104px;
+  background-color: #ffeed3;
 }
 
 .lemonhr {
@@ -177,6 +178,11 @@ a {
 }
 .popitemtitle {
   margin-top: 150px;
+  position: relative;
+}
+.poparrow {
+  position: absolute;
+  margin: auto;
 }
 .popitem {
   height: 400px;
@@ -231,6 +237,7 @@ a {
   color: #ffeed3;
   word-wrap: Break-All;
   margin-top: 35px;
+  width: 400px;
 }
 
 .tryimg {
@@ -269,11 +276,27 @@ a {
   margin-bottom: 50px;
 }
 .lastparttext {
-  width: 770px;
+  width: 800px;
   margin: auto;
 }
 
 .mareadmore {
   text-align: center;
   margin-bottom: 50px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: static;
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  background-color: #c7ab8e;
+  opacity: 1;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
 }
